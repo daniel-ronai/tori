@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14. Tétel: Az 1956-os forradalom és szabadságharc</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #722f37; /* Forradalmi bordó */
+            --secondary-color: #2e5a44; /* Nemzeti zöld */
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #f1f5f9;
+            font-weight: bold;
+            color: var(--primary-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">V. POLITIKAI INTÉZMÉNYEK, ESZMÉK, IDEOLÓGIÁK</div>
+        <h1>14. Tétel: Az 1956-os forradalom és szabadságharc</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> A forradalom okai, belső és nemzetközi előzményei; a fegyveres felkelés és a politikai folyamatok kibontakozása; a Nagy Imre-kormány intézkedései; a szovjet katonai beavatkozás és a megtorlás időszaka.</li>
+                <li><strong>Elvárt tudásszint:</strong> Rendszerszintű összefüggések, kronológiai pontosság és a diktatúra működési mechanizmusainak ismerete.</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Petőfi Kör</span>, <span class="important-term">MEFESZ</span>, <span class="important-term">Lyukas zászló</span>, <span class="important-term">Molotov-koktél</span>, <span class="important-term">Pesti srácok</span>, <span class="important-term">Munkástanács</span>, <span class="important-term">Nemzetőrség</span>, <span class="important-term">Pufajkások</span>, <span class="important-term">Munkásőrség</span>, <span class="important-term">Internálás</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">Nagy Imre, Rákosi Mátyás, Gerő Ernő, Kádár János, Rajk László, Maléter Pál, Pongrátz Gergely, Nyikita Hruscsov</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1956. október 23.</strong> (A forradalom kitörése), <strong>október 28.</strong> (A fordulat, a kormány elismeri a forradalmat), <strong>november 1.</strong> (A semlegesség bejelentése), <strong>november 4.</strong> (A szovjet invázió), <strong>1958. június 16.</strong> (Nagy Imre kivégzése)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. A forradalom okai és közvetlen előzményei</h2>
+        <p>Az 1956-os forradalom elsődleges, strukturális oka a <span class="important-term">Rákosi-rendszerrel</span> való általános és mély társadalmi elégedetlenség volt. A totális diktatúra, az erőszakos kollektivizálás, a beszolgáltatások és az Alkotmányos alapjogok teljes sárba tiprása feszültségpontig juttatták a magyar társadalmat. A felrobbanáshoz végül nemzetközi és belső politikai folyamatok láncolata vezetett:</p>
+        
+        <ul>
+            <li><strong>A szovjet blokk megrendülése:</strong> Nyikita Hruscsov az SZKP XX. kongresszusán (1956. február) elmondott beszédével nyíltan elítélte a sztálinizmust. Ez a lépés alapjaiban ingatta meg a csatlós államok sztálinista vezetőinek tekintélyét, és komoly bátorítást adott a magyar kommunista pártellenzéknek.</li>
+            <li><strong>A belpolitikai válság és Rákosi bukása:</strong> Az új szovjet irányvonal miatt Rákosi Mátyás kénytelen volt elismerni személyes felelősségét a koncepciós perekben. Helyzete fenntarthatatlanná vált, így a szovjetek 1956 nyarán lemondatták, és a Szovjetunióba száműzték. A válságot azonban nem sikerült megoldani, mivel az új főtitkár a Rákosi-rendszer második embere, <span class="important-term">Gerő Ernő</span> lett, aki képtelen volt érdemi válaszokat adni a társadalmi követelésekre.</li>
+            <li><strong>A Petőfi Kör és az egyetemi ifjúság:</strong> A DISZ (kommunista ifjúsági szervezet) keretein belül működő <span class="important-term">Petőfi Kör</span> vitafórumai tavasztól kezdve a rendszerkritika legális gócpontjaivá váltak. Októberre a diákok radikalizálódtak: kiléptek a hivatalos szervezetből, és létrehozták a független <span class="important-term">MEFESZ</span>-t (Magyar Egyetemi és Főiskolai Egyesületek Szövetsége). A párt meggyengülését jelezte az is, hogy október 6-án a tömeges demonstrációvá váló újratemetésen rehabilitálták Rajk Lászlót és társait.</li>
+            <li><strong>A nyugati propaganda hatása:</strong> A *Szabad Európa Rádió* folyamatosan közvetítette a Nyugat szolidaritását. Bár valódi katonai vagy politikai szándék nem állt a háttérben, a felszabadító szólamok azt a hamis illúziót keltették a magyar lakosságban, hogy egy esetleges felkelés esetén az USA fegyveres segítséget nyújtana.</li>
+        </ul>
+
+        <h2 class="section-title">2. A forradalom kitörése (1956. október 23.)</h2>
+        <p>A MEFESZ and a Petőfi Kör támogatásával az egyetemi ifjúság október 23-ára szimpátiatüntetést szervezett Budapestre, hogy szolidaritást vállaljon a lengyelországi (poznańi) reformmozgásokkal. A pártvezetés kapkodása – a demonstrációt előbb betiltották, majd engedélyezték – csak fokozta a tüntetők elszántságát.</p>
+        <p>Délután a Bem téren már óriási tömeg gyűlt össze, és a menetelők jelszavai gyorsan túlléptek a lengyelek melletti szimpátián. Megfogalmazódtak a forradalom alapvető követelései: a szovjet csapatok azonnali kivonása, <span class="important-term">Nagy Imre</span> kinevezése miniszterelnökké, szabad választások, új gazdaságpolitika és a nemzeti jelképek visszaállítása. A Rákosi-címertől megfosztott <span class="important-term">lyukas zászló</span> a megmozdulás legfőbb szimbólumává vált.</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">Október 23. este: A feszültséggócok és események</div>
+            <table class="diagram-table">
+                <tr>
+                    <td><strong>Kossuth tér (Parlament)</strong><br>Nagy Imre beszédet tart, de a „kedves elvtársak” megszólítással és mérsékletre intéssel csalódást okoz a tömegnek.</td>
+                    <td><strong>Dózsa György út</strong><br>A felkelők technikai eszközökkel és gázhegesztővel ledöntik az elnyomás monstrumát, a 12 méteres Sztálin-szobrot.</td>
+                    <td><strong>Magyar Rádió (Bródy Sándor u.)</strong><br>A tömeg be akarja olvastatni a pontjait. Gerő sértő beszéde után az ÁVH a tömegbe lő. Kitör a fegyveres felkelés.</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>A Rádió épületénél kivezényelt katonák és rendőrök egy része átadta fegyvereit a tüntetőknek, vagy átállt az oldalukra. Másnap reggelre a felkelők elfoglalták a Magyar Rádió épületét.</p>
+
+        <h2 class="section-title">3. Városi gerillaharcok és a forradalom kiteljesedése</h2>
+        <p>A fegyveres felkelés megállítására október 23–24. éjjelén szovjet harckocsik vonultak be a fővárosba a magyar pártvezetés kérésére. A páncélosok megjelenése azonban nem megfélemlítést, hanem totális ellenállást váltott ki. A lakosság és a <span class="important-term">„pesti srácoknak”</span> nevezett tizenéves fiatalok sikeres városi gerillataktikát alkalmaztak. A szűk utcák védelmében, házilag készített <span class="important-term">Molotov-koktélokkal</span> (benzines gyújtópalackokkal) sorra semmisítették meg a szovjet T-34-es tankokat.</p>
+        <p>A fővárosban önálló fegyveres ellenállási központok alakultak (Széna tér, Móricz Zsigmond körtér), melyek közül a legjelentősebb, katonai fegyelem szerint szervezett egység a <strong>Corvin közi csoport</strong> volt, Iván Kovács László, majd Pongrátz Gergely parancsnoksága alatt.</p>
+        <p>A forradalom napok alatt országos méretűvé vált. A vidéki városokban és gyárakban a régi pártvezetőket elmozdították, helyükön <span class="important-term">munkástanácsok</span> és <span class="important-term">forradalmi bizottságok</span> alakultak. A hatalom azonban fegyverrel is próbálkozott: október 25-én a Kossuth téren békés tüntetők közé lőttek (közel 200 halott), október 26-án pedig a mosonmagyaróvári laktanyánál dördült el véres sortűz.</p>
+
+        <h2 class="section-title">4. A politikai fordulat és Nagy Imre reformjai</h2>
+        <p>A pártállam napok alatt összeomlott. Október 25-én Gerő Ernőt leváltották, a párt élére <span class="important-term">Kádár János</span> került, az MDP pedig feloszlott, hogy helyette megalakuljon a Magyar Szocialista Munkáspárt (MSZMP).</p>
+        <p>A legjelentősebb politikai fordulat <strong>október 28-án</strong> következett be. Nagy Imre miniszterelnök – felismerve, hogy a tömegek nem a kapitalizmust, hanem a szocializmus demokratizálását akarják – rádióbeszédében radikális programot hirdetett meg:</p>
+        <ul>
+            <li>Azonnali tűzszünetet rendelt el.</li>
+            <li>A mozgalmat nem ellenforradalomnak, hanem <strong>nemzeti és demokratikus forradalomnak</strong> minősítette.</li>
+            <li>Bejelentette a gyűlölt <span class="important-term">ÁVH</span> (Államvédelmi Hatóság) azonnali feloszlatását.</li>
+            <li>Engedélyezte az önkéntes <span class="important-term">Nemzetőrség</span> felállítását a rend fenntartására.</li>
+            <li>Ígéretet tett a szovjet csapatok Budapestről való kivonására és a teljes elhagyásról szóló tárgyalások megkezdésére.</li>
+        </ul>
+        <p>A következő napokban visszaállították a <strong>többpártrendszert</strong>, koalíciós kormány alakult a korábbi demokratikus pártok (pl. FKgP) bevonásával, felszabadultak a politikai foglyok (köztük Mindszenty József érsek), és megvalósult a teljes sajtószabadság.</p>
+
+        <h2 class="section-title">5. A nemzetközi helyzet és a forradalom leverése</h2>
+        <p>Nagy Imre politikája – a szovjet csapatok kivonásának követelése, a többpártrendszer és az ÁVH-sok budapesti meglincselése – elfogadhatatlan volt Moszkva számára. Hruscsovék úgy látták, hogy a kommunisták elveszítik vezető szerepüket, és Magyarország kiszakad a szovjet blokkból. Október 31-én a szovjet vezetés titokban döntést hozott a katonai invázióról.</p>
+        <p>A beavatkozásra a nemzetközi helyzet kiváló alkalmat teremtett: október 29-én kirobbant a <strong>szuezi válság</strong>, ami teljesen elterelte a nyugati világ figyelmét. Ezzel párhuzamosan az USA nyilatkozatban rögzítette, hogy nem tekinti Magyarországot potenciális katonai szövetségesének, amit Moszkva zöld jelzésként értelmezett: a Nyugat nem kockáztat meg egy atomháborút a magyarokért.</p>
+        <p>A szovjet csapatok átlépését észlelve Nagy Imre november 1-jén bejelentette <strong>Magyarország kilépését a Varsói Szerződésből</strong> és az ország semlegességét, remélve az ENSZ nemzetközi védelmét – ez azonban diplomáciailag hatástalan maradt. November 3-án a szovjetek tárgyalási ürüggyel Tökölre csalták és letartóztatták a magyar honvédség vezérkarát, élén <span class="important-term">Maléter Pál</span> honvédelmi miniszterrel.</p>
+        <p><strong>1956. november 4-én</strong> megindult a „Forgószél” hadművelet. A Vörös Hadsereg megsemmisítő túlerejével szemben a szórványos ellenállás elbukott. Nagy Imre a jugoszláv követségre menekült, míg Kádár János a szovjetek mögött állva bejelentette a Forradalmi Munkás-Paraszt Kormány megalakulását.</p>
+
+        <h2 class="section-title">6. A kádári megtorlás időszaka</h2>
+        <p>A forradalom leverését követően a bosszútól és az elnyomástól félve közel <strong>200 000 magyar menekült nyugatra</strong> a meggyengült határokon át. Kádár Jánosnak a szovjet hadseregre és az újonnan felállított fegyveres szervezetekre támaszkodva kellett letörnie a társadalom passzív ellenállását és a munkástanácsok sztrájkjait:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Erőszakszervezet</th>
+                    <th>Jellemzők és funkciók</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Magyar Forradalmi Honvéd Karhatalom</strong></td>
+                    <td>A népnyelvben <span class="important-term">„pufajkások”</span> a jellegzetes szovjet vattakabátjuk után. Az egykori ÁVH-sokból és bűnös pártfunkcionáriusokból szervezett brutális alakulat, amely decemberben több helyen (pl. Salgótarjánban 50 halottat követelve) békés tüntetők közé lőtt.</td>
+                </tr>
+                <tr>
+                    <td><strong>Munkásőrség</strong></td>
+                    <td>1957 elején alapított, közvetlenül a párt irányítása alá tartozó félkatonai szervezet. Mintegy 60 000 felfegyverzett, elkötelezett kommunista munkásból állt, feladatuk a diktatúra belső védelme volt.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>A megtorlás intézményesített formában, jogi köntösben zajlott le: mintegy 22 000 embert börtönöztek be, 13 000 főt bírósági ítélet nélkül <span class="important-term">internáltak</span> (táborokba zártak), és körülbelül <strong>350 embert kivégeztek</strong>.</p>
+        <p>Nagy Imrét és társait a büntetlenség hamis ígéretével csalták ki a menedékből. Mivel Nagy Imre a fogságban sem volt hajlandó lemondani a miniszterelnökségről Kádár javára – megmentve ezzel a forradalom erkölcsi tisztaságát –, titkos koncepciós perbe fogták. <strong>1958. június 16-án</strong> Nagy Imrét, Maléter Pált és Gimes Miklóst kivégezték. Az esemény évtizedekre tabutémává vált, a hivatalos ideológia pedig kötelező jelleggel „ellenforradalomnak” nevezte 1956-ot.</p>
+
+        <h3 class="subsection-title">A forradalom történelmi öröksége</h3>
+        <p>Bár a szabadságharcot vérbe fojtották, a Szovjetunió és a kommunizmus nemzetközi tekintélye jóváíratlanul megrendült. A forradalom történelmi sikere, hogy megakadályozta a rákosista típusú terror visszatérését: Kádár a későbbiekben kénytelen volt engedményeket tenni a társadalomnak a túlélése érdekében. Végül az 1956-os eszmék mintaként szolgáltak a rendszerváltoztatáshoz, és szimbolikus igazságtételként a mai Harmadik Magyar Köztársaságot a forradalom évfordulóján, <strong>1989. október 23-án</strong> kiáltották ki.</p>
+    </main>
+
+    <footer>
+        <p>Készült az érettségi követelmények és a hivatalos forrásszövegek alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>

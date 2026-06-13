@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21. Tétel: A kereszténység és az iszlám világ a középkorban</title>
+    <style>
+        :root {
+            --bg-color: #f1f5f9;
+            --container-bg: #ffffff;
+            --text-color: #334155;
+            --primary-color: #0f766e; /* Teazöld/Oázis szín az iszlám világ motívumaihoz */
+            --secondary-color: #111827;
+            --accent-color: #b45309; /* Borostyán/Sivatagi homok a hódításokhoz és konfliktusokhoz */
+            --border-color: #cbd5e1;
+            --card-bg: #f8fafc;
+            --highlight-bg: #fffbeb;
+            --note-bg: #f0fdf4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 4px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.25rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .info-note {
+            background-color: var(--card-bg);
+            border-left: 4px solid #64748b;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .historical-context {
+            background-color: var(--note-bg);
+            border: 1px dashed #16a34a;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            border-radius: 6px;
+        }
+
+        .conflict-box {
+            background-color: var(--highlight-bg);
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: left;
+            padding: 12px;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .flex-grid {
+            display: flex;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .flex-col {
+            flex: 1;
+            background: #fafafa;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .flex-col h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .pillar-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .pillar-item {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
+        .pillar-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">VII. Művelődéstörténet</div>
+        <h1>21. A kereszténység és az iszlám világ a középkorban</h1>
+    </header>
+
+    <main>
+        <!-- 1. RÉSZ: AZ ISZLÁM ÉS ARÁBIA GYÖKEREI -->
+        <h2 class="section-title">1. Az iszlám fogalma és az Arab-félsziget kiindulási helyzete</h2>
+        <p>Az iszlám a legfiatalabb, erkölcsileg magas színvonalon álló világvallás. Napjainkban a világ lakosságának kb. 25%-a követi, ezzel a kereszténység után a második legelterjedtebb vallásnak számít a Földön.</p>
+        
+        <h3 class="subsection-title">Arábia az iszlám születésekor</h3>
+        <ul>
+            <li><strong>Törzsi megosztottság:</strong> Az Arab-félsziget nomád állattartással foglalkozó törzsei a gyakori belső harcok miatt az ókorban nem hoztak létre egységes államot.</li>
+            <li><strong>Kereskedelmi csomópontok:</strong> A térségben jelentős kereskedővárosok (Mekka, Medina) jöttek létre, mivel itt futottak keresztül a Távol-Keletet Európával összekötő forgalmas karavánutak.</li>
+            <li><strong>Vallási háttér:</strong> Mohamed fellépéséig az arab törzsek vallását a sokistenhit jellemezte. Mekka már ekkor is vallási központnak számított az itteni Kába szentélyben őrzött, kultikus tiszteletnek örvendő „fekete kő” miatt.</li>
+        </ul>
+
+        <!-- 2. RÉSZ: MOHAMED TEVÉKENYSÉGE ÉS A HIDZSRA -->
+        <h2 class="section-title">2. Mohamed tevékenysége és az államalapítás</h2>
+        <p><strong>Mohamed (570–632)</strong> gazdag mekkai kereskedő volt, aki utazásai során alaposan megismerte a zsidó és a keresztény vallást, amelyek nagy hatást tettek rá. Állítása szerint látomások során, Gábriel arkangyal közvetítésével kapta meg az igaz tanítást Allahtól.</p>
+
+        <h3 class="subsection-title">Mohamed korai fellépése és követelései</h3>
+        <p>A próféta először Mekka polgárait próbálta megtéríteni, és az alábbi radikális változtatásokat követelte:</p>
+        <ul>
+            <li>A többistenhittel (bálványimádással) való teljes szakítást.</li>
+            <li>Az egymás ellen harcoló arab törzsek közötti viszályok azonnali beszüntetését.</li>
+            <li>Az uzsorakamat (a tisztességtelen mértékű kamat) eltörlését.</li>
+        </ul>
+
+        <div class="conflict-box">
+            <strong>A hidzsra (622) – Az iszlám időszámítás kezdete:</strong><br>
+            Mohamed bírálatai – különösen az uzsorakamat elítélése – súlyosan sértették a Mekkát vezető vagyonos kereskedők gazdasági érdekeit. Emiatt 622-ben elüldözték a városból. Ez az esemény a <strong>hidzsra (kivonulás)</strong>, vagy közismert nevén „Mohamed futása”, amely az iszlám időszámítás hivatalos kezdőpontja.
+        </div>
+
+        <h3 class="subsection-title">Medina és Mekka kiegyezése</h3>
+        <p>A Medinába áttelepülő próféta sikeresen maga mellé állította a környező törzseket, majd fegyveres erővel tért vissza Mekkába. Mekka végül behódolt, így Mohamednek sikerült egyetlen közös államban egyesítenie az arab törzseket.</p>
+        
+        <p>A béke érdekében Mohamed komoly engedményt tett Mekkának: a várost a világ közepének jelentette ki, és a pogány eredetű Kába kő tiszteletét beépítette az iszlám hivatalos előírásai közé. Tanításait az iszlám szent könyve, a <strong>Korán</strong> foglalja össze, amelyet életében kezdtek írni, de csak a halála után fejeztek be. Tevékenysége békét teremtett és humánus előrelépést hozott az arab törzsek életében.</p>
+
+        <!-- 3. RÉSZ: AZ ISZLÁM HIT ÉS AZ ÖT ALAPPILLÉR -->
+        <h2 class="section-title">3. Az iszlám hitrendszer és az öt alappillér</h2>
+        <p>Az „iszlám” szó jelentése: <em>„belenyugvás Allah akaratába”</em>. A hívők mindennapi életét és vallásgyakorlatát az alábbi öt kiemelt tanítás határozza meg:</p>
+
+        <ul class="pillar-list">
+            <li class="pillar-item">
+                <span class="pillar-title">1. A monoteizmus megvallása</span>
+                Allah az egyetlen Isten, és Mohamed az ő prófétája.
+            </li>
+            <li class="pillar-item">
+                <span class="pillar-title">2. A napi ötszöri ima</span>
+                A hívőknek naponta ötször Mekka felé fordulva kell imádkozniuk. Ennek idejét a minaretből a müezzin éneke jelzi (hasonlóan a keresztény harangszóhoz). Az imát kötelező rituális fürdés előzi meg, aminek köszönhetően a muszlim népek évszázadokon át lényegesen jobb higiéniai körülmények között éltek, mint a középkori európaiak.
+            </li>
+            <li class="pillar-item">
+                <span class="pillar-title">3. Alamizsnaadás</span>
+                A hívőknek kötelező módon rendszeres anyagi segítséget, alamizsnát kell nyújtaniuk a szegényeknek.
+            </li>
+            <li class="pillar-item">
+                <span class="pillar-title">4. A ramadán havi böjt</span>
+                A ramadán szent hónapjában előírt szigorú böjt megtartása.
+            </li>
+            <li class="pillar-item">
+                <span class="pillar-title">5. Mekkai zarándoklat (Haddzs)</span>
+                Minden hívő férfi kötelessége – ha anyagi és egészségi állapota megengedi –, hogy életében legalább egyszer elzarándokoljon Mekkába a Kába kőhöz. Nőknél ezt a szabályt kevésbé veszik szigorúan.
+            </li>
+        </ul>
+
+        <div class="info-note">
+            <strong>A Kába kő története:</strong><br>
+            A szentély déli sarkában elhelyezett kő feltehetően egy meteoritdarab, amely már Kr. u. 200 körül is bizonyítottan kultusz tárgya volt az arab törzsi vallásokban. Az iszlám teológia szerint a követ maga Allah küldte az embereknek.
+        </div>
+
+        <!-- 4. RÉSZ: HITVALLÁSI ÖSSZEHASONLÍTÁS -->
+        <h2 class="section-title">4. Vallási kapcsolatok és mindennapi szabályok</h2>
+        <p>Az iszlám rengeteg dogmatikai elemet és gondolatot emelt át a zsidó és a keresztény vallásból (monoteizmus, ima, böjt, szegények segítése, zarándoklat). Ábrahámot, Mózest és Jézust is elismert prófétaként tiszteli, mint Mohamed előfutárait.</p>
+
+        <div class="flex-grid">
+            <div class="flex-col">
+                <h4>Teológiai különbségek a kereszténységgel</h4>
+                <ul>
+                    <li><strong>Jézus megítélése:</strong> Az iszlám Jézust nagy prófétának tartja, de <em>nem isteni személynek</em> és nem Megváltónak. Szerintük Jézus istenségét csak a tanítványai találták ki, eltorzítva az eredeti tanítást.</li>
+                    <li><strong>A Szentháromság elvetése:</strong> Az iszlám szerint a Szentháromság valójában három isten hitét jelenti (politeizmus), ami összeegyeztethetetlen a tiszta egyistenhittel.</li>
+                    <li><strong>Keresztény ellenállás:</strong> Keresztény szempontból viszont Mohamed tanítása számít istenkáromlásnak, mivel tagadja Krisztus istenségét.</li>
+                </ul>
+            </div>
+            <div class="flex-col">
+                <h4>Életviteli szabályok és jogrend</h4>
+                <ul>
+                    <li><strong>Étkezési tilalmak:</strong> Tilos a disznóhús fogyasztása (zsidó hatás) és az alkohol ivása.</li>
+                    <li><strong>Házasság:</strong> Egy férfinek legfeljebb négy felesége lehet, de kizárólag akkor, ha mindegyiküket el tudja tartani (anyagi okokból a többségnek egy felesége van).</li>
+                    <li><strong>Dzsihád:</strong> Jelentése „Allah útján való küzdelem”. Jelenthet belső, bűnök elleni lelki harcot, de fegyveres háborút is, amit sokan erőszakos hittérítésként értelmeztek.</li>
+                    <li><strong>Egyházszervezet hiánya:</strong> Az iszlámban nem alakult ki hierarchikus egyház vagy világi jogrend; a jogot a Korán és a hagyományok alapján a vallástudósok határozzák meg.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5. RÉSZ: ARAB HÓDÍTÁSOK ÉS AZ ÁLLAM -->
+        <h2 class="section-title">5. Az arab terjeszkedés és a kalifátus rendszere</h2>
+        <p>Mohamed 632-ben bekövetkezett halála után az arabok egyetlen évszázad alatt hatalmas birodalmat építettek ki: elfoglalták Szíriát, Palesztinát, Perzsiát, Észak-Afrikát és az Ibériai-félsziget jelentős részét. Ez a kora középkor leggyorsabb és legnagyobb arányú hódítása volt a térségben.</p>
+
+        <h3 class="subsection-title">A villámgyors hódítás három fő oka</h3>
+        <ol>
+            <li><strong>Belső egység:</strong> Az egymással rivalizáló arab törzsek egyesítése óriási katonai energiákat szabadított fel a külső ellenségekkel szemben.</li>
+            <li><strong>Vallási fanatizmus:</strong> A harcosokat fűtötte a tudat, hogy a dzsihád (szent harc) során elesők a Korán ígérete szerint azonnal a túlvilági Paradicsomba jutnak.</li>
+            <li><strong>A nagyhatalmak kimerültsége:</strong> A térség két korábbi ura, a Bizánci Birodalom és Perzsia egy elhúzódó, egymás elleni háború után teljesen legyengült. A bizánci adóktól sújtott helyi lakosság sok helyen ellenállás nélkül behódolt az araboknak, akik kezdetben kevesebb adót követeltek és vallásilag is türelmesek voltak.</li>
+        </ol>
+
+        <h3 class="subsection-title">A terjeszkedés megtorpanása</h3>
+        <p>Az arab előretörést végül két nagy csatában sikerült megállítani:</p>
+        <ul>
+            <li><strong>Nyugaton (732 – Poitiers):</strong> A Frank Birodalom (a legerősebb nyugati keresztény királyság) megállította az Európába törő arab seregeket.</li>
+            <li><strong>Keleten (740 – Kis-Ázsia):</strong> Bizánc sikeresen verte vissza az arabokat, megvédve törzsterületeit. Korábban, 717–718-ban magát Konstantinápolyt is megostromolták, de a bizánciak egy titkos fegyverrel, a vízzel elolthatatlan <strong>görögtűzzel</strong> megsemmisítették az arab flottát.</li>
+        </ul>
+
+        <!-- 6. RÉSZ: AZ ARAB ÁLLAM ÉS KULTÚRA -->
+        <h2 class="section-title">6. Az Arab Birodalom felépítése és kulturális öröksége</h2>
+        <p>Az Arab Birodalom élén a <strong>kalifa</strong> állt, aki korlátlan vallási és világi hatalommal rendelkezett, mint Mohamed utódja.</p>
+
+        <div class="historical-context">
+            <strong>A síita és szunnita szakadás politikai gyökerei:</strong><br>
+            A kalifák Mohamed leszármazottai vagy rokonai voltak. Az 5. kalifa (aki csak sógorsági viszonyban állt a prófétával) uralmát a muszlimok egy része nem fogadta el. Ebből a lázadó csoportból jött létre a kisebbségi <strong>síita irányzat</strong>, míg a kalifátust elismerő többséget <strong>szunnitáknak</strong> nevezzük. A politikai szakadásból az évszázadok során komoly vallási dogmatikai különbségek is kifejlődtek.
+        </div>
+
+        <h3 class="subsection-title">Gazdaság és a magas szintű kultúra</h3>
+        <p>Az egységes birodalmi ellenőrzés alatt a távolsági kereskedelem rendkívüli módon felvirágzott, mivel az utazás biztonságossá vált és megszűntek a belső vámhatárok. Bizánc mellett az Arab Birodalom lett a kora középkor legfejlettebb állama.</p>
+
+        <ul>
+            <li><strong>Mesés gazdagság:</strong> A keleti luxus és jólét ihlette az olyan híres történeteket, mint Aladdin vagy az Ezeregyéjszaka meséi.</li>
+            <li><strong>A tudományok fellegvára:</strong> Mivel az arabok korábban is fejlett kultúrájú területeket hódítottak meg, tudományuk (matematika, kémia, földrajz) dinamikusan fejlődött, és sikeresen megőrizték az antik görög-római kultúra értékeit is.</li>
+            <li><strong>A közvetítő szerep:</strong> Az arabok közvetítésével került át Európába Indiából az <strong>arab számok</strong> rendszere, amely felváltotta a bonyolult római számokat, és egyáltalán lehetővé tette a magasabb szintű matematikai műveletek elvégzését.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Készült a megadott hivatalos érettségi forrásszöveg alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>
