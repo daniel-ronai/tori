@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Tétel: A Magyar Királyság gazdasága a 11-15. században</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">I. Gazdaság, gazdaságpolitika, anyagi kultúra</div>
+        <h1>1. Tétel: A Magyar Királyság gazdasága a 11-15. században</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> 2.2 (Uradalom, városfejlődés), 2.5 (Árpád-kor gazdasága), 2.6 (Vegyesházi királyok gazdasági reformjai és Mátyás központosítása)</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (Tág és szűk összefüggések, hatások, gazdaságpolitikai komparáció)</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Regáléjövedelem</span>, <span class="important-term">Urbura</span>, <span class="important-term">Nemesfém-monopólium</span>, <span class="important-term">Kamara haszna</span>, <span class="important-term">Kapuadó</span>, <span class="important-term">Füstpénz</span>, <span class="important-term">Kilenced</span>, <span class="important-term">Ősiség</span>, <span class="important-term">Harmincadvám</span>, <span class="important-term">Hospesek</span>, <span class="important-term">Szabad királyi város</span>, <span class="important-term">Mezőváros</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">I. (Szent) István, II. András, IV. Béla, I. (Anjou) Károly, I. (Nagy) Lajos, Luxemburgi Zsigmond, Hunyadi Mátyás</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1222</strong> (Aranybulla), <strong>1241-42</strong> (Tatárjárás), <strong>1335</strong> (Visegrádi királytalálkozó), <strong>1351</strong> (Nagy Lajos törvényei), <strong>1458-1490</strong> (Hunyadi Mátyás uralkodása)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. Bevezetés: A kora középkori magyar gazdaság alapjai (11-13. század)</h2>
+        <p>A Magyar Királyság megalapításakor, <strong>I. (Szent) István</strong> uralkodása alatt a gazdaság bázisát a <span class="important-term">királyi birtokok túlsúlya</span> jelentette. Az államszervezet és a vármegyerendszer fenntartása a királyi várbirtokok és udvarbirtokok termelésére épült. Ebben a korban a belső piac fejletlen volt, a gazdaság alapvetően önellátó jellegű maradt, a kincstár bevételeit pedig a közvetlen földesúri termelésből származó javak adták.</p>
+        
+        <p>A 13. század elejére a patrimoniális (birtokalapú) királyi hatalom megrendült. II. András mértéktelen birtokadományozásai miatt a királyi magánbirtokállomány drasztikusan lecsökkent. A kieső jövedelmek pótlására az uralkodó a <span class="important-term">regáléjövedelmekre</span> (királyi felségjogon szedett jövedelmek, mint a vámok, sómonopólium, adók) és a <span class="important-term">kamara hasznára</span> (a pénzrontásból, azaz a pénz évenkénti kötelező beváltásából és az ezüsttartalom csökkentéséből származó haszonra) támaszkodott. Ez óriási felháborodást váltott ki, ami az <strong>1222-es Aranybulla</strong> kiadásához vezetett. Az Aranybulla korlátozta a pénzrontást, megtiltotta a zsidók és izmaeliták (muszlimok) pénzügyi tisztségviselését (kamarák bérlését), és védte a nemességet a gazdasági önkénnyel szemben.</p>
+
+        <p>A fejlődést a <strong>tatárjárás (1241-1242)</strong> törte meg, amely hatalmas demográfiai és gazdasági pusztulást okozott. Az országot újjáépítő <strong>IV. Béla</strong> („a második honalapító”) gyökeres fordulatot hajtott végre: külföldi telepeseket, <span class="important-term">hospeseket</span> (pl. német szászokat, kunokat) hívott be a munkaerő pótlására és fejlett gazdasági kultúra (pl. intenzívebb földművelés, szőlőtermesztés) meghonosítására. Megindította a kővárak építését és szisztematikus várospártoló politikát folytatott, kiváltságokat adva a kialakuló településeknek, lerakva a későbbi magyar városhálózat alapjait.</p>
+
+        <h2 class="section-title">2. Az Anjou-kor gazdasági konszolidációja: I. Károly és Nagy Lajos reformjai (14. század)</h2>
+        <p>Az Árpád-ház kihalása utáni anarchiát felszámoló <strong>I. Károly (Károly Róbert)</strong> ismerte fel először, hogy a modern államháztartást nem az eladományozott földbirtokokra, hanem a modernizált regálébevételekre kell alapozni. Reformjai a következők voltak:</p>
+
+        <h3 class="subsection-title">A) A bányareform és az urbura (1327)</h3>
+        <p>Korábban a földbirtokosok eltitkolták, ha a földjükon nemesfémet (aranyat, ezüstöt) találtak, mert a törvény értelmében a birtokot a király kisajátította, és cserébe alacsonyabb értékű cserebirtokot adott. I. Károly szakított ezzel: engedélyezte, hogy a földesúr megtartsa a földjét, sőt a <span class="important-term">bányabér (urbura)</span> egyharmadát (arany esetén a kitermelés 3,33%-át, ezüstnél kb. 4,16%-át) átengedte a földbirtokosnak. Ez óriási ösztönzést jelentett, és Magyarországot Európa legnagyobb arany- és második legnagyobb ezüsttermelőjévé tette.</p>
+
+        <h3 class="subsection-title">B) A nemesfém- és pénzverési monopólium</h3>
+        <p>A magánszemélyeknek megtiltották a nyers, veretlen nemesfém kereskedelmét. A kibányászott ércet kötelezően be kellett szolgáltatni a királyi pénzverő kamaráknak (<span class="important-term">nemesfém-monopólium</span>). A kamarák a nyers fémért cserébe vert pénzt adtak, ám a kapott érmék összértéke a fém valós értékének csupán kb. a fele volt; ez a hatalmas különbözet képezte a kincstár legfőbb bevételét.</p>
+
+        <h3 class="subsection-title">C) Értékálló valuta és az adóreform</h3>
+        <p>A megnövekedett nemesfémbázisra támaszkodva a király 1325-ben firenzei mintára értékálló <span class="important-term">aranyforintot</span> veretett. Ezzel megszűnt a korábbi kamara haszna (a pénzrontás jövedelme). A kieső állami bevétel pótlására vezette be 1336-ban az első jobbágyi állami adót, a <span class="important-term">kapuadót</span>, amelyet portánként szedtek minden olyan telekről, amelynek kapuján egy megrakott szénásszekér be tudott hajtani.</p>
+
+        <h3 class="subsection-title">D) Kereskedelemfejlesztés és az 1351-es törvények</h3>
+        <p>A külkereskedelem megadóztatására bevezette a <span class="important-term">harmincadvámot</span> (a határnál az áruk értékének 1/30-ad részét). Az <strong>1335-ös visegrádi királytalálkozón</strong> a cseh és a lengyel királlyal új, Bécs árumegállító jogát elkerülő kereskedelmi útvonalat hoztak létre (Brünn–Nagyszombat–Visegrád), fellendítve a marha- és borbírálatokat.</p>
+        <p>I. Károly fia, <strong>I. (Nagy) Lajos</strong> az 1351-es törvényeivel rögzítette a gazdasági kereteket. A nemesség védelmében kötelezővé tette a <span class="important-term">kilenced</span> (a jobbágy termésének 9. tizede) beszedését minden földesúr számára. Ez megakadályozta, hogy a bárók adókedvezményekkel csalogassák át a köznemesek jobbágyait. Ugyanekkor vezette be az <span class="important-term">ősiség (aviticitas)</span> törvényét, amely megtiltotta a nemesi föld eladását (a birtok elidegeníthetetlen lett, nemzetségen belül öröklődött, fiág kihalása esetén pedig a <span class="important-term">háramlási jog</span> révén a királyra szállt).</p>
+
+        <h2 class="section-title">3. Hunyadi Mátyás és a központosított államháztartás (15. század második fele)</h2>
+        <p><strong>Hunyadi Mátyás (1458-1490)</strong> szakított a rendi monarchia hagyományos adózási kereteivel, és a bevételek radikális maximalizálására törekedett, hogy fenntarthassa Közép-Európa legmodernebb állandó zsoldoshadseregét, a <span class="important-term">fekete sereget</span>. Éves jövedelme elérte az 500 000 – 700 000 aranyforintot.</p>
+
+        <p>A jövedelmek növelése érdekében Mátyás mélyreható pénzügyi reformokat hajtott végre:</p>
+        <ul>
+            <li>Eltörölte a kapuadót, és helyette bevezette a <span class="important-term">füstpénzt</span> (kamara adója). A változtatás lényege, hogy a füstpénzt háztartásonként (kéményenként) szedték, radikálisan növelve az adózók számát.</li>
+            <li>A harmincadvámot átnevezte <span class="important-term">koronavámmá</span>, ezzel jogilag megszüntette a korábbi egyházi és nemesi vámmentességeket.</li>
+            <li>A kincstár legfőbb bázisává a <span class="important-term">rendkívüli hadiadó</span> vált. Ezt telkenként 1 aranyforint értékben vetette ki, és a török veszélyre, valamint nyugati hadjárataira hivatkozva évente egyszer, de rendkívüli helyzetben akár kétszer is beszedte (túladóztatva a jobbágyságot).</li>
+        </ul>
+
+        <div class="diagram-container">
+            <div class="diagram-title">A Hunyadi Mátyás-féle államháztartás szerkezete</div>
+            <table class="diagram-table">
+                <tr>
+                    <th>FŐ BEVÉTELEK</th>
+                    <th>FŐ KIADÁSOK</th>
+                </tr>
+                <tr>
+                    <td>Rendkívüli hadiadó (telkenként 1 aranyforint)<br>Füstpénz (háztartásonként)<br>Koronavám & Sómonopólium<br>Városok és bányák adói</td>
+                    <td>A Fekete Sereg (állandó zsoldoshadsereg) fenntartása<br>Végvári rendszer karbantartása<br>Központosított királyi hivatalok működtetése<br>Reneszánsz udvari pompa és mecénás tevékenység</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2 class="section-title">4. Komparatív elemzés: A Fekete sereg és az oszmán Janicsárok</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Szempont</th>
+                    <th>Hunyadi Mátyás Fekete Serege</th>
+                    <th>Az Oszmán Birodalom Janicsárjai</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sereg típusa</strong></td>
+                    <td>Hivatásos, pénzért harcoló nemzetközi <span class="important-term">zsoldossereg</span>.</td>
+                    <td>Állandó, hivatásos, elit reguláris gyalogság.</td>
+                </tr>
+                <tr>
+                    <td><strong>Létszám</strong></td>
+                    <td>Változó, magvát kb. 8 000 - 10 000 fő alkotta. Európai mércével óriási állandó haderő.</td>
+                    <td>Kb. 10 000 - 12 000 fő a 15. században, ami abszolút szervezeti fölényt biztosított.</td>
+                </tr>
+                <tr>
+                    <td><strong>Toborzás / Utánpótlás</strong></td>
+                    <td>Önkéntes alapon szerződtetett veteránok (cseh, német, magyar harcosok).</td>
+                    <td>Kényszerű gyermekadó (<span class="important-term">devsirme</span>) a keresztény alattvalóktól; iszlamizáció és fanatikus nevelés.</td>
+                </tr>
+                <tr>
+                    <td><strong>Fegyverzet</strong></td>
+                    <td>Korszerű nehézgyalogság, nehéz- és könnyűlovasság (huszárok), kiemelkedően magas (kb. 20%) <span class="important-term">tűzfegyver-ellátottság</span>.</td>
+                    <td>Fegyelmezett, zárt alakzatban harcoló íjászok, majd a 15. századtól tűzfegyveres puskások.</td>
+                </tr>
+                <tr>
+                    <td><strong>Politikai szerep</strong></td>
+                    <td>A király közvetlen eszköze a rendi oligarchák és főúri összeesküvések letörésére.</td>
+                    <td>A szultáni abszolutizmus közvetlen bázisa a katonai nemességgel (szpáhik) szemben.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">5. Magyarországi városfejlődés a középkorban</h2>
+        <p>A pénzgazdálkodás és a királyi kiváltságolás hatására a 14-15. századra Magyarországon három markánsan elkülönülő várostípus jetted létre. Bár a magyar városhálózat sűrűsége elmaradt a nyugat-európai mintáktól, jogilag követték a nyugati modelleket.</p>
+
+        <h3 class="subsection-title">1. Szabad királyi városok</h3>
+        <p>Közvetlenül a király fennhatósága alá tartoztak, mentesültek a földesúri joghatóság alól. Adójukat évente egy összegben (<span class="important-term">egyösszegű adózás</span>) fizették a kincstárnak. Teljes önkormányzati joggal rendelkeztek: maguk választották a polgármestert, a városi tanácsot és a plébánost. Saját bíráskodási joguk volt, fallal vehették magukat körül, és rendelkeztek <span class="important-term">vásártartási joggal</span>. (Pl. Buda, Pest, Kassa, Sopron, Pozsony).</p>
+
+        <h3 class="subsection-title">2. Bányavárosok</h3>
+        <p>A Felvidéken és Erdélyben kialakuló speciális státuszú települések, amelyek lakói főként bányászatból éltek. Miután kifizették a földbirtokosnak a bányabért, közvetlenül a királyi kamarákkal álltak kapcsolatban. Speciális szabadságjogokkal és bányajoggal rendelkeztek a nemesfém-kitermelés biztosítására. (Pl. Körmöcbánya, Selmecbánya, Besztercebánya).</p>
+
+        <h3 class="subsection-title">3. Mezővárosok (oppidumok)</h3>
+        <p>Sajátos közép-európai formáció. Jogi értelemben <span class="important-term">földesúri joghatóság</span> alatt álltak, lakóik jogilag jobbágyok maradtak, de kollektív kiváltságaik voltak. Legfontosabb joguk az volt, hogy az adókat a földesúrnak évente egy összegben fizethették meg, és korlátozott önkormányzattal (elöljáró-választás) bírtak. Nem voltak városfalaik, gazdaságuk fő bázisát az árutermelő mezőgazdaság (pl. szarvasmarha-kereskedelem, borászat) adta. (Pl. Debrecen, Kecskemét).</p>
+    </main>
+
+    <footer>
+        <p>Készült az érettségi követelmények és a hivatalos tematikák alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>

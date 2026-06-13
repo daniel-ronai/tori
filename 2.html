@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1. Tétel: A nagy földrajzi felfedezések és a korai kapitalizmus</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        .arrow-cell {
+            font-size: 1.5rem;
+            color: var(--accent-color) !important;
+            border: none !important;
+            background: transparent !important;
+            vertical-align: middle !important;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">II. Gazdaság, gazdaságpolitika, anyagi kultúra</div>
+        <h1>3.1. Tétel: A nagy földrajzi felfedezések és következményeik</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> 3.1 (A kora újkor gazdasági folyamatai, a földrajzi felfedezések, a korai kapitalizmus kialakulása és intézményei)</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (Ok-okozati összefüggések, világgazdasági munkamegosztás, társadalmi és strukturális átalakulások)</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value">
+                    <span class="important-term">Aranyéhség</span>, 
+                    <span class="important-term">Karavella</span>, 
+                    <span class="important-term">Gyarmatosítás</span>, 
+                    <span class="important-term">Árforradalom</span>, 
+                    <span class="important-term">Világkereskedelem</span>, 
+                    <span class="important-term">Manufaktúra</span>, 
+                    <span class="important-term">Tőzsde</span>, 
+                    <span class="important-term">Kapitalizmus</span>, 
+                    <span class="important-term">Bekerítés</span>, 
+                    <span class="important-term">Második jobbágyrendszer</span>, 
+                    <span class="important-term">Monopólium</span>
+                </div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">Vasco da Gama, Kolumbusz Kristóf, Amerigo Vespucci, Magellán, Kálvin János</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value">
+                    <strong>1492</strong> (Amerika felfedezése, a kora újkor kezdete), 
+                    <strong>1494</strong> (Tordesillasi egyezmény), 
+                    <strong>1498</strong> (Vasco da Gama eléri Indiát), 
+                    <strong>1519–1522</strong> (Magellán expedíciója, a Föld megkerülése)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. A felfedezések előzményei és kiváltó okai</h2>
+        <p>A 15. századra Európa gazdasága a korábbi válságok után gyors fejlődésnek indult. Kialakult az <span class="important-term">atlanti-óceáni kereskedelmi útvonal</span>, amely közvetlen tengeri összeköttetést biztosított a déli Levante és az északi Hanza-útvonal között. Ezzel párhuzamosan azonban súlyos strukturális problémák jelentkeztek.</p>
+        
+        <p>A legégetőbb problémává az <span class="important-term">aranyéhség</span> vált. A gazdasági növekedés és a pénzforgalom bővülése több nemesfémet igényelt volna, mint amennyi a kontinensen rendelkezésre állt. Ennek okai összetettek voltak. Egyrészt a tradicionális távol-keleti (indiai, kínai) luxuscikkekért a <span class="important-term">levantei kereskedelem</span> révén az európaiak szinte kizárólag arannyal és ezüsttel tudtak fizetni, mivel a fejlett keleti gazdaságoknak nem volt szükségük európai árukra. Az arany így évszázadokon át szisztematikusan kiáramlott Európából. Másrészt az európai bányák (köztük a magyar és cseh nemesfémbányák) hozama drasztikusan visszaesett, mivel a könnyen elérhető felső rétegeket kimerítették, a mélyebb szintek kiaknázására pedig a korabeli technika még nem volt alkalmas.</p>
+        
+        <p>A helyzetet tovább fokozta az **Oszmán Birodalom** expanziója. A török hódítások kezdetben bizonytalanná és veszélyessé tették a levantei útvonalat, majd miután a Földközi-tenger keleti medencéjét teljesen ellenőrzésük alá vonták, magas vámok kivetésével megdrágították az átmenő forgalmat. E tényezők együttesen arra ösztönözték az európai hajósokat, hogy új nemesfém-lelőhelyek és egy Indiába vezető, közvetlen tengeri útvonal után kutassanak.</p>
+
+        <h2 class="section-title">2. A felfedezések technikai feltételei</h2>
+        <p>A nyílt óceán meghódítása elképzelhetetlen lett volna a 15. században elterjedt technikai újítások és az araboktól átvett találmányok nélkül. A legfontosabb eszközök a következők voltak:</p>
+        <ul>
+            <li>Az <span class="important-term">iránytű</span>, amely lehetővé tette a nyílt tengeren való tájékozódást a partok látótávolságán kívül is.</li>
+            <li>A <span class="important-term">kvadráns</span>, amely a csillagok állása alapján segítette a földrajzi szélesség és a pontos helyzet meghatározását.</li>
+            <li>Az új típusú, stabil és biztonságos vitorlások. Megjelent a kétárbócos <span class="important-term">karavella</span> és a háromárbócos <span class="important-term">karakk</span>. Összetett vitorlarendszerüknek köszönhetően képesek voltak a széllel szemben (negyed szélben) is haladni, manőverezésüket pedig a modern hátsó kormánylapát biztosította.</li>
+        </ul>
+
+        <h2 class="section-title">3. A felfedezések menete és a gyarmatosítás első hulláma</h2>
+        <p>Az Ibériai-félszigeten a mórok (arab-berber törzsek) elleni évszázados visszahódító harc (<span class="important-term">reconquista</span>) a 15. század végére zárult le, létrehozva két ambiciózus keresztény államot: **Portugáliát** és **Spanyolországot** (utóbbi Kasztília és Aragónia egyesülésével jött létre).</p>
+
+        <h3 class="subsection-title">A portugál út: Afrika megkerülése</h3>
+        <p>A portugálok szisztematikusan haladtak Afrika nyugati partjai mentén dél felé. A tengerészeti oktatásba és kutatásba fektetett állami energiák meghozták a gyümölcsüket: **Vasco da Gama** 1498-ban Afrika megkerülésével, a nyílt óceánon keresztül elsőként jutott el Indiába. Ez az útvonal kiküszöbölte a szárazföldi átrakodási nehézségeket és kikerülte a török vámokat. A portugálok az Indiai-óceánon nem hódítottak nagy területeket, hanem fegyveres <span class="important-term">kereskedőtelepeket</span> hoztak létre, kisajátítva a fűszerkereskedelmet.</p>
+
+        <h3 class="subsection-title">A spanyol út: Út nyugat felé és Amerika felfedezése</h3>
+        <p>A spanyol szolgálatban álló genovai **Kolumbusz Kristóf** a Föld gömb alakjára hagyatkozva nyugat felé indult el India felé. Szerencsés elméleti tévedése (jóval kisebbnek hitte a Föld kerületét) mentette meg az expedíciót: **1492-ben** kikötött a Bahamákon, ezzel – bár szentül hitte, hogy Indiát érte el – felfedezte az európaiak számára az új kontinenst. Az új földrész valódi mibenlétét **Amerigo Vespucci** tudatosította az európai közvéleményben, róla nevezték el Amerikát. A spanyolok globális törekvéseit **Magellán** 1519–1522-es expedíciója koronázta meg, amely (bár Magellán a Fülöp-szigeteken életét vesztette) a Csendes-óceán átszelésével és egyetlen megmaradt hajó hazatérésével végérvényesen bebizonyította a Föld gömbölyűségét.</p>
+
+        <h3 class="subsection-title">A világ felosztása és a gyarmatbirodalmak</h3>
+        <p>A két ibériai nagyhatalmat fenyegető háborút pápai közvetítéssel, a **tordesillasi (1494)** és a zaragozai egyezménnyel kerülték el, amely hosszúsági körök mentén felosztotta a világot. Közép- és Dél-Amerika (Brazília kivételével) spanyol, míg az Indiai-óceán és Brazília portugál érdekszférává vált. A spanyol konkvisztádorok (Cortez, Pizarro) haditechnikai fölényüknek (vashasználat, lőfegyverek, lovak) köszönhetően gyorsan megsemmisítették a fejlett indián kultúrákat (Azték és Inka Birodalom). Kiépült a merev gyarmati közigazgatás, hatalmas ezüstbányákat nyitottak, valamint ültetvényeket hoztak létre (dohány, cukornád, kávé), amelyeken kezdetben az indiánok kényszermunkájával, majd az Afrikából tömegesen behurcolt fekete rabszolgák erejével termeltek.</p>
+
+        <h2 class="section-title">4. Gazdasági következmények: Árforradalom és világgazdaság</h2>
+        <p>Az új gyarmatokról Európába áramló elképesztő mennyiségű nemesfém (főleg ezüst) strukturális gazdasági sokkot okozott. Mivel a nemesfémből vert pénz mennyisége ugrásszerűen megnőtt, annak belső értéke csökkent, ami Európa-szerte tartós és radikális pénzromláshoz, az úgynevezett <span class="important-term">árforradalomhoz</span> (inflációhoz) vezetett. A mezőgazdasági és ipari cikkek árai drasztikusan megemelkedtek.</p>
+        
+        <p>A világkereskedelem súlypontja végleg áthelyeződött a Földközi-tengerről az **Atlanti-óceánra**. Levante jelentősége visszaesett, míg az atlanti partvidék kikötővárosai (Lisszabon, London, Amszterdam) rohamos fejlődésnek indultak. Kialakult az új globális és kontinentális munkamegosztás.</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">A kora újkori világkereskedelmi körforgás (Atlanti háromszög)</div>
+            <table class="diagram-table">
+                <tr>
+                    <td><strong>AMERIKA</strong><br><small>Nemesfém, dohány, cukor, gyapot</small></td>
+                    <td class="arrow-cell">➔</td>
+                    <td><strong>NYUGAT-EURÓPA</strong><br><small>Iparcikkek, fegyverek, textil, luxusáruk</small></td>
+                </tr>
+                <tr>
+                    <td class="arrow-cell">▲</td>
+                    <td style="border: none; background: transparent;"></td>
+                    <td class="arrow-cell">▼</td>
+                </tr>
+                <tr>
+                    <td><small>Rabszolgamunka az ültetvényeken</small></td>
+                    <td class="arrow-cell">◀</td>
+                    <td><strong>AFRIKA</strong><br><small>Behurcolt fekete rabszolgák</small></td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Európán belül létrejött a **kontinentális munkamegosztás**: Nyugat-Európa az ipari termelésre, a kereskedelemre és a pénzügyi szektorra specializálódott. Ezzel szemben Közép- és Kelet-Európa az agrártermékek (gabona, élőmarha) beszállítójává vált a nyugati piacokra. Keleten az óriási konjunktúra hatására a nemesség nem modernizált, hanem a feudális kötöttségek konzerválására törekedett: növelték a jobbágyok robotterheit, saját kezelésű földjeiket (<span class="important-term">majorság</span>) bővítették, és jogilag megtiltották a szabad költözést. Ez a folyamat a <span class="important-term">második jobbágyrendszer</span> kialakulásához és a feudális viszonyok megcsontosodásához vezetett.</p>
+
+        <h2 class="section-title">5. A korai kapitalizmus kialakulása és intézményrendszere</h2>
+        <p>A megnövekedett pénzmennyiség és a kibővült piacok ösztönzőleg hatottak a gazdasági beruházásokra. Kialakult a <span class="important-term">tőkefelhalmozás</span> folyamata, és létrejött a <span class="important-term">kapitalizmus</span>, amely a feudális földbirtok-alapú rendszerrel szemben a magántulajdonra, a szabad versenyre és a hasznot hajtó befektetésre (<span class="important-term">tőke</span>) épült. A modern bankrendszer és a hitelezés fejlődését a reformáció is legitimálta: Kálvin János elvei alapján a tisztes kamatra nyújtott kölcsön többé nem számított vallási bűnnek.</p>
+
+        <h3 class="subsection-title">Németalföld gazdasági csodája és a tőzsde</h3>
+        <p>A kora újkor első tőkés mintája Németalföld (különösen az északi Hollandia) lett. Bár a terület a spanyol Habsburgok uralma alatt állt, a spanyol infláció miatt az amerikai nemesfémek jelentős része a fejlett németalföldi iparcikkek importja révén ide áramlott. A hatalmas árutömeg gyors cseréjét egy új intézmény, a <span class="important-term">tőzsde</span> szolgálta. A tőzsdén a kereskedők minták alapján, az áru fizikai jelenléte nélkül, határidős szerződésekkel kötöttek üzleteket, ami forradalmasította a piacot. A hollandok a mezőgazdaságban is újítottak: az ugarrendszert elhagyva bevezették a <span class="important-term">vetésforgót</span>, takarmány- és kapásnövények intenzív termesztésével maximalizálva a tengertől gátakkal elhódított földek hozamát. A spanyol elnyomás és adóemelések miatt 1566-ban kitört lázadás után Hollandia 1609-ben függetlenné vált, és mint a „tenger fuvarosa”, hatalmas flottájával globális gyarmatosításba kezdett (pl. Indonézia megszerzése).</p>
+
+        <h3 class="subsection-title">Anglia felemelkedése és a bekerítések</h3>
+        <p>Anglia a 16. század folyamán a gyapjú és az olcsó posztó iránti kontinentális kereslet hullámát lovagolta meg. Az angol földbirtokosok tömegesen tértek át a juhtenyésztésre, ami a <span class="important-term">bekerítések</span> folyamatát vonta maga után: a közös legelőket és a bérlők földjeit saját használatba vették és elkerítették. A földjüket vesztett parasztok a városokba áramlottak, olcsó és mobilis munkaerőt biztosítva a kialakuló tőkés iparnak. Létrejött a piacra termelő, vállalkozó <span class="important-term">újnemesség</span> rétege. A kockázatos tengerentúli kereskedelmet az uralkodók <span class="important-term">monopóliumok</span> (kizárólagos jogok) adományozásával serkentették. Így jött létre az **Angol Kelet-indiai Társaság**, amely részvénytársasági formában működve a 17. századra kiszorította a portugálokat a távol-keleti piacokról.</p>
+
+        <h3 class="subsection-title">A manufaktúrák megjelenése</h3>
+        <p>A tömegigények kiszolgálására a korábbi, szigorú és versenykorlátozó céhes keretek alkalmatlanná váltak. Létrejöttek a szabad vállalkozáson alapuló <span class="important-term">manufaktúrák</span>.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Szempont</th>
+                    <th>Középkori Céh</th>
+                    <th>Kora újkori Manufaktúra</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Munkaszervezés</strong></td>
+                    <td>Egyetlen mester végzi a teljes munkafolyamatot az elejétől a végéig.</td>
+                    <td>A termelést egyszerű <span class="important-term">részfolyamatokra</span> bontják; munkamegosztás érvényesül.</td>
+                </tr>
+                <tr>
+                    <td><strong>Munkaerő</strong></td>
+                    <td>Képzett mesterek, legények és inasok szigorú hierarchiája.</td>
+                    <td>Alacsonyan képzett, gyorsan betanítható <span class="important-term">bérmunkások</span>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Mennyiség és ár</strong></td>
+                    <td>Korlátozott darabszám, magas előállítási költség és magas végár.</td>
+                    <td>Tömegtermelés, gyors kibocsátás, szignifikánsan <span class="important-term">alacsonyabb egységár</span>.</td>
+                </tr>
+                <tr>
+                    <td><strong>Minőség</strong></td>
+                    <td>Kiváló, egyedi, szigorúan ellenőrzött mestermunkák.</td>
+                    <td>Gyengébb, silányabb, de standardizált tömegáruk (magas piaci kereslettel).</td>
+                </tr>
+                <tr>
+                    <td><strong>Szabályozás</strong></td>
+                    <td>Szigorú belső törvények (munkaidő, eszközök, árak és létszám korlátozása).</td>
+                    <td><span class="important-term">Szabad verseny</span> és szabad vállalkozás; nincsenek jogi korlátok.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="subsection-title">Spanyolország strukturális hanyatlása</h3>
+        <p>Döbbenetes történelmi paradoxon, hogy a 16. század abszolút szuperhatalma, Spanyolország a 17. század elejére teljesen elszegényedett és háttérbe szorult. Mivel a gyarmati nemesfém közvetlenül náluk halmozódott fel, a spanyol árak nőttek a leggyorsabban Európában. A spanyol vezető réteg számára így olcsóbb és észszerűbb volt mindent külföldről (Németalföldről, Angliából) importálni, mint otthon megtermelni. Ennek következtében a **spanyol hazai ipar elsorvadt**. A beáramló elképesztő kincseket a nemesség nem forgatta vissza tőkeként a gazdaságba, hanem luxuskiadásokra, udvari pompára, egyházi reprezentációra, valamint a globális háborúk zsoldoshadseregeire fordította és felélte. Az „aranyszázad” végére a spanyol gazdaság összeomlott, és az ország elveszítette európai vezető szerepét.</p>
+    </main>
+
+    <footer>
+        <p>Készült a hivatalos érettségi követelmények, források és a kora újkori tematikák alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>
