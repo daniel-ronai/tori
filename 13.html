@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Tétel: Diktatúrák a két világháború között</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --container-bg: #ffffff;
+            --text-color: #1a1a1a;
+            --text-muted: #4a5568;
+            --nazi-color: #9b2c2c;
+            --soviet-color: #c53030;
+            --primary-dark: #2d3748;
+            --border-color: #cbd5e0;
+            --accent-bg: #f7fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-dark);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            line-height: 1.3;
+        }
+
+        .comparison-box {
+            background-color: var(--accent-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 35px;
+        }
+
+        .comparison-box h2 {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .comparison-box p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .nazi-theme {
+            color: var(--nazi-color);
+            border-bottom-color: var(--nazi-color) !important;
+        }
+
+        .soviet-theme {
+            color: var(--soviet-color);
+            border-bottom-color: var(--soviet-color) !important;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .sub-list {
+            list-style-type: circle;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 20px;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fff5f5;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 1px 5px;
+            border-radius: 4px;
+            border: 1px solid #fefcbf;
+        }
+        
+        .nazi-term {
+            color: var(--nazi-color);
+            background-color: #fff5f5;
+            border: 1px solid #fed7d7;
+        }
+
+        .soviet-term {
+            color: var(--soviet-color);
+            background-color: #fff5f5;
+            border: 1px solid #fed7d7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary-dark);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        blockquote {
+            background-color: #f7fafc;
+            border-left: 4px solid #ed8936;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4a5568;
+        }
+        
+        .joke-box {
+            background-color: #edf2f7;
+            border-left: 4px solid #4a5568;
+            padding: 12px 18px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .joke-title {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">V. Politikai intézmények, eszmék, ideológiák</div>
+        <h1>13. Diktatúrák a két világháború között (a hitleri Németország és a sztálini Szovjetunió)</h1>
+    </header>
+
+    <section class="comparison-box">
+        <h2>📌 Összehasonlító rendszerszemlélet</h2>
+        <p>A két világháború közötti korszakban kiépülő totális diktatúrák (a nemzetiszocialista Németország és a kommunista Szovjetunió) alapjaiban forgatták fel a XIX. századi polgári demokráciák jogrendjét. Bár ideológiai önmeghatározásuk és társadalmi bázisuk gyökeresen eltért (fajelmélet és magántulajdon megtartása vs. osztályharc és magántulajdon felszámolása), az elnyomás mechanizmusai, a totális állam kiépítése, az egypártrendszer és a személyi kultusz működése megdöbbentő strukturális hasonlóságot mutat.</p>
+    </section>
+
+    <main>
+        <!-- NÉMETORSZÁG SZEKCIÓ -->
+        <h2 class="section-title nazi-theme">I. A nemzetiszocialista Németország</h2>
+        
+        <h3 class="subsection-title">1. Előzmény: a Németországgal kötött béke (Versailles, 1919)</h3>
+        <p>Az első világháborút lezáró békekonferencia egyik fő célja az volt, hogy Németországot meggyengítse, és ezzel alkalmatlanná tegye egy újabb háború kirobbantására. Ezért Németországtól több területet is elcsatoltak:</p>
+        <ul>
+            <li>Az elveszített területek között volt <strong>Elzász-Lotaringia</strong>, amelyet Franciaország kapott vissza. (A vegyes, francia-német lakosságú területet még XIV. Lajos hódította el a Német-római Birodalomtól, majd mintegy 200 éves francia fennhatóság után az 1870–1871-es porosz-francia háborúban került Németországhoz).</li>
+            <li>Németországtól a <strong>gyarmatait is elvették</strong>, és zömében brit vagy francia irányítás alá helyezték őket.</li>
+            <li>A <strong>Rajna-vidéket</strong> – vagyis a francia határnál folyó Rajnától nyugatra és keletre eső kb. 50 km-es sávot – <span class="important-term nazi-term">demilitarizálták</span>. Ez azt jelentette, hogy erre a területre, bár Németországtól nem csatolták el, nem léphetett be a német hadsereg. Az intézkedés Franciaország biztonságát szolgálta, megakadályozva a német haderő meglepetésszerű támadását.</li>
+        </ul>
+        <p>Németországra a győztesek emellett <strong>óriási jóvátételt</strong> (hadisarcot) róttak ki, amit azzal indokolták, hogy szerintük Németország viseli az egyedüli felelősséget a háború kirobbantásáért. Radikálisan <strong>korlátozták a német hadsereg létszámát</strong> is, és megtiltották nekik a modern fegyvernemek (tankok, repülőgépek) tartását.</p>
+        <p>A béke végeredménye így egy szerencsétlen kompromisszum lett: Németországot jól megalázták, de igazán meg nem gyengítették, hiszen népességét és gazdasági erejét tekintve továbbra is nagyhatalom maradt. Így fennmaradt az esélye annak, hogy a háborús károk kiheverése után újabb háborúval próbáljon elégtételt venni a győztesektől. Ez a kollektív megalázás alapvető szerepet játszott abban, hogy a nemzeti sérelmek orvoslását célul tűző szélsőjobboldali irányzatok (köztük a nemzetiszocialisták) jelentős társadalmi bázisra tudtak szert tenni. Hitler később tömegeket tudott megnyerni az egykori győztesek elleni háború ügyének; első külpolitikai sikereit (pl. Ausztria bekebelezése) a német közvélemény többsége is támogatta.</p>
+        <blockquote>
+            <strong>Foch marsall, francia katonatiszt jóslata a béketervezet láttán:</strong><br>
+            „Ez nem béke, hanem húszéves fegyverszünet!” 1919-től számítva évre pontosan bejött a jóslata, hiszen 1939-ben robbantotta ki Németország a második világháborút.
+        </blockquote>
+
+        <h3 class="subsection-title">2. Németország politikai viszonyai az 1920-as években</h3>
+        <p>A világháborús vereség miatt II. Vilmos császár 1918. november 9-én lemondásra kényszerült, mivel őt tartották a katasztrófa egyik fő felelősének. Az ország államformája a háború után demokratikus köztársaság lett (Weimari Köztársaság). A háborús terhek és a vereség ténye óriási társadalmi elégedetlenséghez, így a szélsőségek megerősödéséhez vezetett, mivel válságos időszakban az emberek gyakran keresnek radikálisabb, gyorsabb megoldásokat.</p>
+        <p>Bár a szociáldemokrata kormányoknak sikerült kivédeni a szélsőbal és a szélsőjobb puccskísérleteit 1919–1920 folyamán, és az 1920-as évek közepére megszilárdult a köztársaság, a szélsőségek erősek maradtak. Fő bázisukat a leszerelt egykori frontkatonák adták, akiknek a katonai szolgálat miatt kiestek a tanulóéveik, nehezen kaptak munkát, and a háborús traumák miatt fogékonyabbak voltak az erőszakos módszerekre.</p>
+        <p>A korszakban alakult számos szélsőjobboldali szervezet közül a náci párt (<span class="important-term nazi-term">NSDAP</span>) kezdetben csak egy volt a sok közül. Vezetője, Adolf Hitler osztrák származású volt (1889, Braunau am Inn), aki sikertelen bécsi festőművészi szárnybontogatás után a német hadseregben harcolta végig az első világháborút. A vereség után lépett politikai pályára, és szónoki képességeinek köszönhetően gyorsan a kis Deutsche Arbeiterpartei (ebből nőtt ki a náci párt) kulcsfigurájává vált.</p>
+        <p>Hitlerre először az <strong>1923-as müncheni sörpuccs</strong> miatt terelődött országos figyelem, amikor a nácik erőszakkal próbálták meg átvenni a hatalmat. A hadsereg elfojtotta a puccsot, de az azt követő per országos ismertséget szerzett Hitlernek. Végül mindössze öt év börtönre ítélték, amiből jó magaviselete és felső körökbeli szimpatizánsai miatt csupán 9 hónapot kellett letöltenie.</p>
+
+        <h3 class="subsection-title">3. A nemzetiszocialista ideológia</h3>
+        <p>Hitler az eszmei alapjait a börtönben írt <span class="important-term nazi-term">Mein Kampf</span> (Harcom) című könyvében foglalta össze. A nemzetiszocialista ideológia legfőbb jellemzői az alábbiak voltak:</p>
+        <ul>
+            <li><strong>Szociális és nemzeti demagógia (népámítás):</strong> Társadalmi problémákhoz kapcsolódó és a nemzeti büszkeségre építő hazugságok. Példák:
+                <ul class="sub-list">
+                    <li>Azt állították, hogy a súlyos munkanélküliség a zsidó nagytőkések miatt alakult ki.</li>
+                    <li>Terjesztették a <em>„tőrdöfés-legendát”</em>, amely szerint a német hadsereg a fronton valójában veretlen maradt, de a hátországi szabotázsok (szociáldemokraták, zsidók) miatt kényszerült feladni a harcot.</li>
+                    <li>Hitler elve szerint a tömegnek kevés, egyszerű jelszó kell, amit sokszor kell ismételni.</li>
+                </ul>
+            </li>
+            <li><strong>Revíziós igények:</strong> A versailles-i békerendszer sérelmeinek orvoslása, a németlakta területek egyesítése (igény formálása Ausztriára, Csehszlovákia és Lengyelország németlakta részeire).</li>
+            <li><strong>Antidemokratizmus és antikommunizmus:</strong> A demokrácia teljes elvetése és éles szembenállás a kommunizmussal.</li>
+            <li><strong>A nagytőke korlátozása:</strong> De a kommunistákkal ellentétben a magántulajdon eltörlését nem követelték.</li>
+            <li><strong>Keleti terjeszkedés:</strong> A német <span class="important-term nazi-term">élettér</span> (Lebensraum) megszerzése szláv területek kizsákmányolásával, földet ígérve a német parasztoknak.</li>
+            <li><strong>Fajelmélet (Rasszizmus):</strong>
+                <ul class="sub-list">
+                    <li>A németek felsőbbrendűek (kultúrateremtők).</li>
+                    <li>A skandinávok, hollandok másodrendűek (képesek átvenni a német kultúrát).</li>
+                    <li>A szlávok és magyarok alsóbbrendűek (szolgának jók).</li>
+                    <li>A <strong>zsidók alsóbbrendűek és veszélyesek, kiirtandók</strong>. Tipikus bűnbakként őket hibáztatták egymásnak ellentmondó folyamatokért is (első világháborús vereség, gazdasági világválság, kapitalista kizsákmányolás, kommunizmus térnyerése). Hitler elve szerint a harcot egyetlen ellenségre kell korlátozni, mert ez növeli a tömegmozgalom erejét.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3 class="subsection-title">4. A hatalom megragadása (1932–1934)</h3>
+        <p>A nácik a befolyásuk növelésére erőteljes propagandát (rádió, filmek), tömegpártot, látványos erődemonstrációkat és a félkatonai szervezetük, az <strong>SA (rohamosztag)</strong> terrorakcióit használták. Az igazi áttörést azonban az 1929-es <strong>gazdasági világválság</strong> hozta el: a tömeges munkanélküliség és éhezés miatt a választók a szélsőségek felé fordultak.</p>
+        <p>1932-re az NSDAP lett a legnépszerűbb párt Németországban (37,8%). Mivel a kommunisták is jól szerepeltek (14,3%), többségi kormányt már nem lehetett alakítani valamelyik szélsőség nélkül. A konzervatív politikusok abban a tévhitben, hogy Hitlert majd kézben tudják tartani és ki tudják játszani a kommunisták ellen, nem fogtak össze ellene. <strong>1933. január 30-án Hindenburg birodalmi elnök kancellárrá nevezte ki Hitlert</strong>.</p>
+        <p>A hatalom gyors kiszélesítésének lépései formailag törvényesen zajlottak:</p>
+        <ol>
+            <li><strong>A Reichstag (parlament) felgyújtása:</strong> Egy holland kommunista gyújtogatását kihasználva Hitler elérte a szükségállapot kihirdetését és a kommunisták lejáratását.</li>
+            <li><strong>Új választások és a Felhatalmazási törvény (1933):</strong> A kommunisták kizárásával megtartott választások után a megfélemlített polgári pártok szavazataival megszavaztatták a felhatalmazási törvényt, ami lehetővé tette a parlament nélküli kormányzást (diktatúra).</li>
+            <li><strong>A hatalom koncentrációja (1934):</strong> Hindenburg halála után az államfői és kancellári posztot egyesítették. Hitler hivatalos megszólítása a <span class="important-term nazi-term">Führer</span> (vezér) lett, kiépült a totális vezérkultusz.</li>
+        </ol>
+
+        <h3 class="subsection-title">5. A nemzetiszocialista diktatúra kiépítése és működése</h3>
+        <p>1933-ban megsemmisítették az összes többi pártot, képviselőiket <strong>koncentrációs táborokba</strong> (ekkor még politikai izolációt és munkát célzó táborokba) hurcolták. A polgári szabadságjogokat és a civil szervezeteket felszámolták; kötelező jellegű náci szervezetek jöttek létre minden korosztálynak (pl. <strong>Hitlerjugend</strong>). Kiépült a <span class="important-term nazi-term">totális állam</span>, a művészetet monumentális, megalomán klasszicista formákkal állították a propaganda szolgálatába. Egyedül az egyházak élvezhettek korlátozott önállóságot taktikai okokból.</p>
+        <p>Hitler a párton belüli belső ellenzékkel is leszámolt: a korábbi szociális ígéreteket számonkérő, a nagytőke visszaszorítását követelő SA vezetőit a <strong>„hosszú kések éjszakáján” (1934)</strong> tőrbe csalta és kivégeztette (köztük Ernst Röhm parancsnokot). Ezt követően a rendszer fő támasza a saját testőrség (<span class="important-term nazi-term">SS</span>) és a titkosrendőrség (<span class="important-term nazi-term">Gestapo</span>) lett.</p>
+        <p>A faji politika részeként a zsidókat megfosztották állampolgárságuktól, majd 1938-ban sor került a <strong>„kristályéjszaka”</strong> nevű országos zsidóellenes pogromra (kifosztások, letartóztatások).</p>
+
+        <h3 class="subsection-title">6. A gazdasági válság kezelésének német útja</h3>
+        <p>A nácizmus tömegbázisát a válság felszámolása tartotta meg. Hitler állami megrendelésekkel pörgette fel a gazdaságot, ami a munkanélküliség gyors csökkenéséhez vezetett. Mivel túltermelési válság volt, a beruházásokat olyan ágazatokba irányították, amelyek nem terhelték új árukkal a piacot:</p>
+        <ul>
+            <li><strong>Infrastruktúra:</strong> Autópálya-építések (amelyek a későbbi katonai mozgósítást is szolgálták).</li>
+            <li><strong>Hadiipar:</strong> Nagyszabású fegyvergyártás, ami egyenes úton sodorta az országot a háború felé.</li>
+        </ul>
+        <p>A nagytőkéseket kényszerítették a társadalombiztosítás finanszírozására. A válságból való kilábalás és a kezdeti külpolitikai sikerek (pl. az Anschluss) miatt a náci rendszer az 1930-as évek második felében kifejezetten népszerű volt a német lakosság körében.</p>
+
+        <!-- SZOVJETUNIÓ SZEKCIÓ -->
+        <h2 class="section-title soviet-theme">II. A kommunista Szovjetunió a két világháború között</h2>
+        
+        <h3 class="subsection-title">1. A Szovjetunió megalakulása és általános jellemzői</h3>
+        <p>A cári Oroszországban az első világháborús szenvedések 1917 márciusában forradalomhoz vezettek, amely megbuktatta a cári rendszert. Az új ideiglenes kormány azonban képtelen volt kezelni a nyomort, és hatalmát meg kellett osztania a helyi tanácsokkal (a <span class="important-term soviet-term">szovjetekkel</span>). Ezt kihasználva a bolsevikok (orosz kommunisták) a földosztás és a háborúból való azonnali kilépés ígéretével fellépve, <strong>1917 novemberében puccsal</strong> átvették a kellett hatalmat Lenin vezetésével.</p>
+        <p>A véres orosz polgárháborúban (1918–1922) a bolsevikok győzedelmeskedtek a cári rendszer hívei felett. <strong>1922-ben megalakult a Szovjetunió</strong>, amely elvileg egyenrangú tagállamok szövetsége volt a kiválás jogával, a valóságban azonban a központi orosz akarat érvényesült benne.</p>
+        <p>Kiépült a <span class="important-term soviet-term">totális állam</span> és a pártállam:</p>
+        <ul>
+            <li><strong>Egypártrendszer:</strong> Csak a bolsevik párt működhetett, az állami és a pártszervezetek teljesen összefonódtak.</li>
+            <li><strong>Vallásellenesség:</strong> Az ateista bolsevizmus ideológiai harcot indított az ortodox egyház ellen; a következő két évtizedben a papok mintegy 80-85%-át kivégezték, a templomokat elkobozták.</li>
+        </ul>
+
+        <h3 class="subsection-title">2. Belpolitikai hatalmi harcok Lenin halála után</h3>
+        <p>Lenin 1924-es halála után a párton belül küzdelem indult a főhatalomért a nagy tekintélyű Trockij (a polgárháborús győzelem szervezője) és <strong>Sztálin (eredeti nevén: Joszip Visszarionovics Dzsugasvili, mozgalmi nevén az „acélember”)</strong>, a párt főtitkára között. Trockij alábecsülte Sztálint, „a párt legkiemelkedőbb középszerének” nevezve őt. Sztálin azonban kiváló taktikusként elhitette magáról, hogy befolyásolható, így megszerezte a többség támogatását, Trockijt pedig háttérbe szorította, majd száműzte (később, 1940-ben Mexikóban egy szovjet ügynök jégcsákánnyal gyilkolta meg). Az 1920-as évek végére Sztálin korlátlan diktátorrá vált.</p>
+
+        <h3 class="subsection-title">3. Erőltetett modernizáció és iparosítás</h3>
+        <p>Sztálin rendkívül erőltetett iparosításba kezdett, szinte kizárólag a <strong>nehézipart fejlesztve</strong>. Ennek kettős célja volt:
+            <ul class="sub-list">
+                <li>A marxi elveknek megfelelően fel akarták duzzasztani a munkásosztály számarányát a parasztsággal szemben.</li>
+                <li>Mivel a világforradalom elmaradt, a Szovjetunió egyedüli kommunista államként elszigetelten, ellenséges gyűrűben élt, így a gyárakat eleve úgy építették meg, hogy bármikor átállhassanak haditermelésre (hadiipari szabványok alkalmazása).</li>
+            </ul>
+        </p>
+        <p>Mivel a szovjet állam elzárta magát a külföldi tőkétől és a piacgazdaság ösztönző hatásaitól, a nehézipari fejlesztések forrásait kizárólag a lakosság életszínvonalának radikális leszorításával, a könnyűipar és a mezőgazdaság teljes kifosztásával tudták előteremteni.</p>
+        <div class="joke-box">
+            <div class="joke-title">Korabeli szovjet vicc az ipari szabványokról</div>
+            Iván megígéri a családjának, hogy a mosógépgyárból minden nap hazalop egy alkatrészt, és otthon összeszerel egy gépet. Egy év múlva kérdezi az asszony: „Mi van már a mosógéppel?” Mire Iván: „Akárhogy szerelem össze, mindig tank lesz belőle!”
+        </div>
+
+        <h3 class="subsection-title">4. Kollektivizálás és a Holodomor</h3>
+        <p>A <span class="important-term soviet-term">kollektivizálás</span> a parasztok erőszakos termelőszövetkezetekbe (téesz) kényszerítését, földjeik és állataik köztulajdonba vételét jelentette. A magántulajdonhoz ragaszkodó jómódú parasztokat (<span class="important-term soviet-term">kulákok</span>) a rendszer ellenségnek nyilvánította, majd államellenes vádakkal kivégeztette vagy kényszermunkatáborokba hurcolta.</p>
+        <p>A kollektivizálás katasztrofális gazdasági következményekkel járt:</p>
+        <ul>
+            <li>Az egyéni érdekeltség megszűnése miatt a termelési kedv és a termésátlagok zuhanni kezdtek.</li>
+            <li>A mezőgazdaság funkciója csupán a városi ipari munkásság olcsó ellátása és a munkaerő átáramoltatása lett az iparba.</li>
+            <li>A korábban Európa éléskamrájának számító területen állandósult a hiány. Az 1930-as években – elsősorban Ukrajnában – borzalmas éhínség bontakozott ki, amelyben milliók haltak meg: ez volt a <span class="important-term soviet-term">Holodomor</span> (ukránul: éhhalál). Ennek ellenére a szovjet állam a devizaszerzés érdekében gabonát exportált külföldre.</p>
+        </ul>
+
+        <h3 class="subsection-title">5. Tervgazdálkodás és munkaverseny</h3>
+        <p>Az államosított gazdaságot központilag előírt, feszített időszakokra (pl. 3-5 éves tervekre) lebontott <span class="important-term soviet-term">tervgazdaság</span> keretében irányították. A rendszer alapvető hibái a szakértelem hiánya (fontosabb volt a politikai megbízhatóság) és az irreális elvárások voltak. A tervszámok teljesítésének kényszerereje miatt a vállalatok a mennyiséget helyezték a minőség elé, ami rengeteg selejtes terméket és az adatok tömeges kozmetikázását (hamisítását) szülte.</p>
+        <p>A dolgozókat <strong>munkaversenyekkel</strong> igyekeztek motiválni. A legismertebb példakép <strong>Sztahanov</strong> bányász volt, aki 1935-ben egy műszak alatt az előírt norma tizennégyszeresét (több mint 100 tonna szenet) bányászta ki. Bár a teljesítmény mögött valójában egy egész alá dolgozó brigád állt, a hatalom ezt tette meg általános elvárássá. A normák nem teljesítése innentől kezdve büntetendő szabályszegésnek, szabotázsnak minősült.</p>
+
+        <h3 class="subsection-title">6. A sztálini terror és a koncepciós perek</h3>
+        <p>Sztálin paranoiás, gyanakvó személyisége miatt a terror az 1930-as évek közepén érte el a csúcspontját, és magát a bolsevik párt felső vezetését is sújtotta a riválisok kiiktatása érdekében. (Jellemző, hogy 1939-ben még a terrort végrehajtó titkosrendőrség vezetőjét, Jezsovot is kivégeztették).</p>
+        <p>A terror alapvető eszközei voltak:</p>
+        <ul>
+            <li><strong>Koncepciós perek (kirakatperek):</strong> Koholt vádak alapján előre megrendezett perek, ahol a fő bizonyíték a vádlott – fizikai kínzásokkal vagy családtagok megzsarolásával kicsikart – beismerő vallomása volt. A tipikus vádak: fasiszta vagy trockista összeesküvés, kémkedés. Lenin szinte összes egykori közvetlen munkatársa és a Vörös Hadsereg tisztikarának nagy része is ezeknek esett áldozatul. 1934-ben Kirov leningrádi pártvezető rejtélyes meggyilkolása (melyet valószínűleg maga Sztálin rendelt el) szolgált ürügyül a tömeges letartóztatások megindításához.</li>
+            <li><strong>A kényszermunkatáborok rendszere (GULAG):</strong> A „Javítómunkatáborok Főigazgatósága”. Milliókat hurcoltak főként Szibériába embertelen körülmények közé, ahol a rabok tömegesen haltak meg a fagy, az éhezés és a kegyetlenkedések miatt. A GULAG rabjainak ingyenmunkája (út-, vasút- és csatornaépítések) képezte a szovjet iparosítási sikerek igazi gazdasági alapját.</li>
+        </ul>
+
+        <h3 class="subsection-title">7. Személyi kultusz és a sztálinizmus mérlege</h3>
+        <p>A terrorral párhuzamosan épült ki Sztálin mértéktelen, kritikátlan dicsőítése, a <strong>személyi kultusz</strong>. Ennek vizuális elemei (képek minden közintézményben, monumentális felvonulások, születésnapok országos megünneplése, kötelező dicsőítő versek) azt a célt szolgálták, hogy a lakosság elhiggye: Sztálin egy tévedhetetlen, jóságos, atyai vezető.</p>
+        <p><strong>A mérleg:</strong> A sztálini diktatórikus és terrorisztikus gazdaságpolitika révén a Szovjetunió nehézipara alkalmassá vált egy modern tömeghadsereg felszerelésére, ami elengedhetetlen feltétele volt a későbbi második világháborús győzelemnek – ennek ára azonban az elképesztő mértékű emberi áldozat és a totális elnyomás volt.</p>
+    </main>
+
+    <footer>
+        <p>Készült a hivatalos érettségi követelményrendszer és a megadott forrásszöveg alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>

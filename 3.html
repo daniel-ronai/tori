@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Tétel: Magyarország gazdasága a két világháború között</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">I. GAZDASÁG, GAZDASÁGPOLITIKA, ANYAGI KULTÚRA</div>
+        <h1>3. Tétel: Magyarország gazdasága a két világháború között</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> Trianon gazdasági következményei, A Teleki- és Bethlen-kormányok konszolidációs politikája, Gazdasági szerkezetváltás a 20-as években.</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (Ok-okozati összefüggések, strukturális gazdasági hatások és a revíziós külpolitika beágyazottsága).</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Konszolidáció</span>, <span class="important-term">Földreform</span>, <span class="important-term">Bethlen-Peyer paktum</span>, <span class="important-term">Egységes Párt</span>, <span class="important-term">Cenzusos választójog</span>, <span class="important-term">Nyílt szavazás</span>, <span class="important-term">Népszövetségi kölcsön</span>, <span class="important-term">Pengő</span>, <span class="important-term">Keresztény-nemzeti eszme</span>, <span class="important-term">Numerus clausus</span>, <span class="important-term">Etnikai / Teljes revízió</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">Horthy Miklós, Teleki Pál, Nagyatádi Szabó István, IV. Károly, Bethlen István, Peyer Károly</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1920. június 4.</strong> (Trianoni béke), <strong>1920</strong> (Nagyatádi-féle földreform és Numerus clausus), <strong>1921</strong> (Soproni népszavazás és királypuccsok), <strong>1922</strong> (MSZDP paktum és Népszövetségi belépés), <strong>1927</strong> (A pengő bevezetése), <strong>1929</strong> (A gazdasági világválság kezdete)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. A konszolidáció kezdete: A Trianon utáni sokk és a Teleki-kormány (1920–1921)</h2>
+        <p>A trianoni békediktátum aláírását követően a magyar gazdaság és politika összeomlás szélére került. Az aláíró kormány lemondása után <strong>Horthy Miklós</strong> kormányzó (aki államfőként, és nem kormányfőként irányított) a nemzetközi hírű földrajztudóst, <strong>Teleki Pál grófot</strong> nevezte ki miniszterelnökké 1920-ban. Teleki feladata a <span class="important-term">konszolidáció</span>, azaz a politikai és gazdasági rend megteremtése volt. Kormánya határozottan visszaszorította a politikai szélsőségeket: felszámolta a fehérterrorért felelős önállósodott tiszti különítményeket, és betiltotta a kommunista pártot, amivel helyreállította a belső közbiztonságot.</p>
+
+        <h3 class="subsection-title">A Nagyatádi-féle földreform (1920)</h3>
+        <p>A társadalmi feszültségek csillapítására és az agrárproletárok mélyszegénységének enyhítésére a Nemzetgyűlés legerősebb ereje, a Kisgazdapárt földreformot követelt. <strong>Nagyatádi Szabó István</strong> földművelésügyi miniszter vezetésével megindult a földosztás. Azonban az arisztokrácia és a katolikus egyház ellenállása miatt az eredeti terveknél jóval kevesebb földet osztottak fel. Végeredményben sok rászoruló kapott földet, de a kiosztott parcellák mérete (többségében 5 hold alatt) életképtelen kisbirtokokat eredményezett, amelyek nem biztosították egy család megélhetését. A nagybirtokrendszer és az arisztokrácia gazdasági befolyása így lényegében érintetlen maradt.</p>
+
+        <h3 class="subsection-title">A királypuccsok és Teleki bukása (1921)</h3>
+        <p><strong>IV. Károly</strong>, az utolsó magyar király 1921-ben kétszer is megpróbálta fegyveresen vagy diplomáciailag visszavenni a trónt. Horthy és a kormány ellenállt, mivel a Habsburgok visszatérése a kisantant azonnali katonai támadását vonta volna maga után. Az első legitimista puccskísérlet politikai bizonytalansága miatt Teleki Pál lemondásra kényszerült, helyét pedig <strong>Bethlen István gróf</strong> vette át.</p>
+
+        <h2 class="section-title">2. A bethleni politikai stabilizáció mechanizmusa</h2>
+        <p>Bethlen István tízéves miniszterelnöksége alatt a korlátozott parlamentarizmus és a hagyományos elit hatalmának biztosítására törekedett. Kiváló taktikai lépésekkel stabilizálta a belpolitikát:</p>
+        <ul>
+            <li><strong>A Bethlen–Peyer paktum (1921. december):</strong> Megállapodás az MSZDP vezetőjével, Peyer Károllyal. A szociáldemokraták legális működési és parlamenti képviseleti jogot kaptak. Cserébe vállalták, hogy nem szerveznek tömegsztrájkokat, és nem agitálnak a közalkalmazottak (pl. vasutasok) és az agrárproletárok között, biztosítva a nagybirtokok nyugalmát. Ez a paktum külföldön is javította az ország megítélését.</li>
+            <li><strong>Az Egységes Párt létrehozása (1922):</strong> Bethlen a híveivel belépett a Kisgazdapártba, ezzel egy óriási kormánypárti tömböt kovácsolt, amelyben a kisgazda érdekeket sikeresen háttérbe szorította az úri-konzervatív elit javára.</li>
+            <li><strong>A választójog szigorítása és a nyílt szavazás:</strong> Új, szigorúbb életkori és műveltségi cenzust vezetett be. Vidéken visszaállította a <span class="important-term">nyílt szavazást</span> (a választókerületek 4/5-ében), ahol a bizottság előtt élőszóban kellett szavazni, ami lehetőséget adott a választók egzisztenciális megfélemlítésére. Bár Budapesten és a nagyvárosokban megmaradt a titkos szavazás (ahol az ellenzék nyert), ez az 1/5-ös arány miatt nem veszélyeztette a kormány parlamenti többségét.</li>
+            <li><strong>A kétkamarás parlament:</strong> Visszaállította a felsőházat, amely arisztokratákból és főpapokból állva konzervatív fékfórumként szolgált a radikálisabb alsóházi törvényjavaslatokkal szemben.</li>
+        </ul>
+
+        <h2 class="section-title">3. Trianon gazdasági következményei és a szerkezetváltás</h2>
+        <p>A vesztes háború és az ország területének kétharmadát elcsatoló trianoni béke katasztrofális helyzetbe hozta a magyar gazdaságot. Megszakadtak a korábbi egységes Monarchián belüli szabad áru-, tőke- és munkaerő-áramlások. Fontos vasútvonalak és nyersanyaglelőhelyek kerültek a határ túloldalára, miközben az elcsatolt területekről közel 400 000 menekült (főként állami hivatalnokok és értelmiségiek) áramlott az anyaországba, akiknek az ellátása hatalmas terhet jelentett. A gazdasági káoszt a kibontakozó súlyos infláció fokozta.</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">A bethleni gazdasági konszolidáció folyamata</div>
+            <table class="diagram-table">
+                <tr>
+                    <th>1. LÉPÉS: INFLÁCIÓS POLITIKA</th>
+                    <th>2. LÉPÉS: NEMZETKÖZI NYITÁS</th>
+                    <th>3. LÉPÉS: STABILIZÁCIÓ</th>
+                </tr>
+                <tr>
+                    <td>Fedezet nélküli korona kibocsátása az életképes hazai ágazatok átmeneti támogatására.</td>
+                    <td>Belépés a Népszövetségbe (1922), majd sikeres nemzetközi hitel / kölcsön felvétele.</td>
+                    <td>A Magyar Nemzeti Bank megalapítása és az értékálló <strong>Pengő (1927)</strong> bevezetése.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3 class="subsection-title">Strukturális szerkezetváltás a gazdaságban</h3>
+        <p>Mivel a korábban domináns nehézipar a nyersanyagok (fa, érc), az élelmiszeripar pedig a biztos felvevőpiacok elvesztése miatt válságba került, a népszövetségi kölcsönökből teljesen új, a Csonka-Magyarország területén is életképes ágazatokat kellett fejleszteni. Ezt a folyamatot az alábbi táblázat mutatja be:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fejlesztett, sikeres ágazatok (1920-as évek)</th>
+                    <th>Visszaszoruló, válságos ágazatok</th>
+                    <th>A konszolidáció mérlege</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        * <strong>Textilipar</strong> (korábban a cseh ipar miatt fejletlen volt)<br>
+                        * <strong>Villamosipar és gépgyártás</strong><br>
+                        * <strong>Közlekedés és Turizmus</strong>
+                    </td>
+                    <td>
+                        * <strong>Nehézipar</strong> (nyersanyaghiány)<br>
+                        * <strong>Malom- és élelmiszeripar</strong> (exportpiacok és nyersanyag elvesztése)
+                    </td>
+                    <td>
+                        * 1929-re a termelés túlszárnyalta az utolsó békeév (1913) szintjét.<br>
+                        * <strong>Árnyoldal:</strong> A növekedés nagymértékben külföldi tőkére és hitelekre épült.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>A külső hitelektől való erős függőség miatt az 1929-ben kirobbanó gazdasági világválság rendkívül súlyosan érintette Magyarországot. A megugró munkanélküliség és a felerősödő társadalmi feszültségek kezelésére Bethlen Istvánnak már nem volt eszköze, így 1931-ben lemondott.</p>
+
+        <h2 class="section-title">4. Uralkodó ideológia: A Keresztény-Nemzeti Kurzus</h2>
+        <p>A Horthy-korszak szellemi bázisát a <span class="important-term">keresztény-nemzeti eszme</span> adta, amely éles kritikával illette a dualizmus kori liberalizációt, és legfőbb céljának a történelmi Magyarország helyreállítását, a trianoni határok revízióját tekintette. A korszakban felerősödött a zsidóellenesség (antiszemitizmus), a zsidóságot tévesen bűnbakká téve a háborús vereségért és Trianonért (elterelve a figyelmet a valós katonai és geopolitikai okokról). Ennek állami megnyilvánulása volt az <strong>1920-as Numerus Clausus</strong> („zárt szám”) törvény, amely a zsidó egyetemi hallgatók arányát az országos számarányukhoz (kb. 5-6%) maximálta.</p>
+
+        <h2 class="section-title">5. Külpolitika és a revíziós követelések szintjei</h2>
+        <p>A külpolitika egyetlen, mindent meghatározó célja a trianoni békeszerződés megváltoztatása (<span class="important-term">revízió</span>) volt. Első átmeneti sikerként könyvelhető el a <strong>soproni népszavazás (1921)</strong>, ahol a Rongyos Gárda fegyveres ellenállása után, olasz diplomáciai közvetítéssel a lakosság Magyarország mellett döntött (így elnyerve a <i>Civitas Fidelissima</i> címet). Bethlen sikeresen léptette be az országot a Népszövetségbe (1922), majd 1927-ben aláírta az olasz–magyar örökbarátsági szerződést, amellyel Magyarország kitört a nemzetközi elszigeteltségből.</p>
+
+        <h3 class="subsection-title">A revíziós koncepciók három irányzata</h3>
+        <p>A hivatalos propaganda és a közvélemény mindennapjait teljesen átitatta a revíziós kultusz (pl. iskolai "Magyar Hiszekegy" ima, irredenta szimbólumok), de a politikai célok tekintetében három eltérő elképzelés élt egymás mellett:</p>
+
+        <ol>
+            <li><strong>Etnikai revízió:</strong> Kizárólag a közvetlenül a határok mentén élő, összefüggő magyarlakta területek visszacsatolása (kb. 1,5 millió magyar). Ezt elsősorban a hazai baloldali és liberális ellenzéki pártok támogatták.</li>
+            <li><strong>Optimális revízió:</strong> A magyarlakta területeken túl a gazdaságilag vagy stratégiailag fontos, nem magyar nemzetiségű területek visszaszerzése is (pl. Kárpátalja vagy a Bánát). Ez volt a hivatalos kormányzati diplomácia reális célkitűzése.</li>
+            <li><strong>Teljes revízió:</strong> A történelmi Magyarország teljes területi épségének helyreállítása a Szent István-i állameszme alapján ("Mindent vissza!"). Ezt sulykolta a tömegpropaganda, és a közvélemény döntő többsége ezzel azonosult.</li>
+        </ol>
+        <p>A revíziós propaganda hosszú távú árnyoldala az lett, hogy irreális reményeket keltett a társadalomban, frusztrációhoz vezetett, és a harmincas évek végén a németekkel való végzetes, szoros politikai és katonai együttműködésbe sodorta az országot.</p>
+    </main>
+
+    <footer>
+        <p>Készült az érettségi követelmények és a hivatalos tematikák alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>

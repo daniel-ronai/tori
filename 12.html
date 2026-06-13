@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12. Tétel: A rendszerváltás Magyarországon 1989-90-ben</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #e53e3e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fff5f5;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #fed7d7;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #9b2c2c;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #742a2a;
+            border-bottom: 1px solid #feb2b2;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #feb2b2;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fff5f5;
+            font-weight: bold;
+            color: #c53030;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #fed7d7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        blockquote {
+            background-color: #f7fafc;
+            border-left: 4px solid #ed8936;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4a5568;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">IV. Politikai berendezkedések a modern korban</div>
+        <h1>12. Tétel: A rendszerváltás Magyarországon 1989-90-ben</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> A Kádár-rendszer válsága, az ellenzéki mozgalmak és pártok megalakulása, a Nemzeti Kerekasztal-tárgyalások, a harmadik Magyar Köztársaság kikiáltása, az első szabad választások és a nemzeti szuverenitás visszanyerése.</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (A békés átmenet jogi és politikai mechanizmusai, belső és külső tényezők rendszerszintű elemzése).</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Adósságspirál</span>, <span class="important-term">Kádári alku</span>, <span class="important-term">Második gazdaság</span>, <span class="important-term">Reformkommunisták</span>, <span class="important-term">Szamizdat</span>, <span class="important-term">Ellenzéki Kerekasztal (EKA)</span>, <span class="important-term">Sarkalatos törvények</span>, <span class="important-term">Alkotmánybíróság</span>, <span class="important-term">Népszavazás (négyigenes)</span>, <span class="important-term">MDF–SZDSZ paktum</span>, <span class="important-term">Szuverenitás</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">Kádár János, Mihail Gorbacsov, Grósz Károly, Pozsgay Imre, Németh Miklós, Nagy Imre, Antall József, Göncz Árpád</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1987</strong> (Lakiteleki találkozó), <strong>1988</strong> (Kádár leváltása), <strong>1989. január</strong> ('56 népfelkeléssé nyilvánítása), <strong>1989. június 16.</strong> (Nagy Imre újratemetése), <strong>1989. nyár</strong> (Nemzeti Kerekasztal), <strong>1989. szeptember</strong> (Páneurópai piknik / Határnyitás), <strong>1989. október 23.</strong> (Köztársaság kikiáltása), <strong>1990. tavasz</strong> (Első szabad választások), <strong>1991. június</strong> (Szovjet csapatok kivonulása)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. Előzmények: A Kádár-rendszer strukturális és gazdasági válsága</h2>
+        <p>Az 1970-es évek végétől a Kádár-rendszert is elérte a szocialista blokk országaira általánosan jellemző, rendszerszintű gazdasági válság. Magyarország a technológiai versenyben egyre drasztikusabban elmaradt a nyugati piacgazdaságokkal szemben. A nyugati államok az olajárrobbanás kihívásaira (amelyet az arab országok az USA és Izrael ellen indítottak el a kitermelés csökkentésével) gyors alkalmazkodással, hatékony műszaki újításokkal és a termelékenység fokozásával reagáltak. Ezzel szemben a magyar tervgazdaság képtelen volt követni a világpiaci változásokat.</p>
+        
+        <p>A gazdasági rugalmatlanság mögött mély strukturális okok húzódtak meg:</p>
+        <ul>
+            <li>A tervgazdasági modellből teljesen hiányzott az egyéni motiváció és a vállalati rugalmasság.</li>
+            <li>A pártállami diktatúra fullasztó légköre elfojtotta az egyéni kreativitást és az innovációt.</li>
+            <li>A politikai vezetés makacsul fenntartotta az eleve gazdaságtalan, hazai nyersanyagbázis híján lévő nehézipar kiemelt támogatását, ami folyamatosan rontotta a nemzetgazdasági termelékenységet.</li>
+        </ul>
+
+        <p>A politikai vezetés a strukturális reformok helyett nyugati hitelek felvételével próbálta elfedni a válságot. A kölcsönöket azonban nem a gazdaság szerkezeti átalakítására fordították, hanem a veszteséges nehézipar fenntartására és az életszínvonal mesterséges biztosítására. Utóbbira azért volt égető szükség, mert a <span class="important-term">kádári alku</span> (a társadalom politikai passzivitása az anyagi jólét és a viszonylagos létbiztonság fejében) azonnal összeomlott volna az életkörülmények hirtelen romlásával.</p>
+
+        <p>Mivel a gazdaság korszerűsítése elmaradt, nem képződött meg a hitelek visszafizetéséhez szükséges többletbevétel, és beindult az <span class="important-term">eladósodási spirál</span>: a régi adósságok törlesztését már csak újabb, egyre kedvezőtlenebb feltételű (magasabb kamatú, rövidebb futamidejű) hitelekből lehetett finanszírozni. A helyzetet súlyosbította a rossz valutaválasztás (svájci frank, német márka, japán jen), amelyek erősödése a dollárhoz képest hatalmas árfolyamveszteséget és az adósságállomány automatikus növekedését okozta.</p>
+
+        <blockquote>
+            <strong>Korabeli politikai vicc a rendszer működésképtelenségéről:</strong><br>
+            – Mi a különbség a létező és a működő szocializmus között?<br>
+            – A létező szocializmus nem működik, a működő pedig nem létezik.
+        </blockquote>
+
+        <p>A '70-es évek végétől a pártvezetés kénytelen volt megszorításokat bevezetni: csökkentették a reálbéreket és emelték a fogyasztói árakat. Az állam már nem tudta garantálni a szocializmus alapvívmányainak tekintett ingyenes és minőségi oktatást, valamint egészségügyet. A '80-as évekre a hivatalos főállású jövedelemből az életszínvonal megtartása lehetetlenné vált; a családok túlélését csak a <span class="important-term">második gazdaságban</span> (háztáji, maszekolás) végzett, önkizsákmányoló pluszmunka biztosította. Aki ezt nem bírta vállalni, az elszegényedett, aminek következtében a társadalmi vagyoni olló rohamosan kinyílt.</p>
+
+        <h2 class="section-title">2. Kádár János bukása és az MSZMP belső meghasonlása</h2>
+        <p>A '80-as évek második felére Kádár János harminc éve megingathatatlannak tűnő pozíciója külső és belső okok miatt egyaránt összeomlott. Az ország gazdasági csődje mellett Kádár biológiai öregsége (1988-ban 76 éves volt) és szellemi-fizikai hanyatlása is nyilvánvalóvá tette alkalmatlanságát. A nemzetközi helyzet is gyökeresen megváltozott: a Szovjetunió elveszítette a fegyverkezési versenyt a Nyugattal szemben. Az új szovjet főtitkár, Mihail Gorbacsov a belső gazdasági válság miatt feladta a Brezsnyev-doktrínát (a szocialista országok szuverenitásának korlátozását katonai erővel), és egyértelművé tette, hogy a Szovjetunió nem fog fegyveresen beavatkozni a csatlós államok belügyeibe. Kádár hatalmának legfőbb külső támasza ezzel megszűnt.</p>
+
+        <p>1988 májusában Kádár Jánost leváltották az MSZMP főtitkári posztjáról. Az új főtitkár, Grósz Károly és a keményvonalasok köre azonban továbbra is csak minimális kozmetikázást akart, a gyökeres reformokat elutasította, így a válság tovább mélyült. Ezzel párhuzamosan az állampárton belül látványosan megerősödött a <strong>reformkommunista szárny</strong> (Pozsgay Imre, Németh Miklós), akik belátták, hogy a régi módszerekkel a rendszer menthetetlen, és többpártrendszeri, valamint piacgazdasági reformok felé nyitottak. Az állampárt ezzel végzetesen megosztottá és cselekvőképtelenné vált.</p>
+
+        <h2 class="section-title">3. Az ellenzéki mozgalmak és pártok kibontakozása</h2>
+        <p>A tömeges elégedetlenség hatására megindult az ellenzéki csoportok megszerveződése. Erőszakos fellépésre, tömeges bebörtönzésekre a hatalom már nem gondolhatott, mivel a diktatúra nyílt alkalmazása elvágta volna a létfontosságú nyugati hitelforrásokat és gazdasági kapcsolatokat (rombolva a kádári rendszer „legvidámabb barakk” és liberális imázsát). Kisebb hatósági zaklatások, házkutatások, <span class="important-term">szamizdat</span> (illegális, cenzúrázatlan kiadványok) lefoglalások és útlevél-bevonások azonban a korszak végéig előfordultak.</p>
+
+        <p>A '80-as évek végén az ellenzéki körök legális politikai pártokká szerveződtek, amelyek építését 1988-tól jelentős nyugati alapítványi és kormányzati pénzügyi, illetve diplomáciai források is támogatták:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>A párt neve</th>
+                    <th>Megalakulás éve / jellege</th>
+                    <th>Főbb ideológiai és értékrendi jellemzők</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MDF</strong> (Magyar Demokrata Fórum)</td>
+                    <td>1987, Lakitelek (új párt)</td>
+                    <td>Népi-nemzeti, mérsékelten konzervatív, kereszténydemokrata szellemiségű; a Horthy-korszak népi íróinak hagyományaiból táplálkozott.</td>
+                </tr>
+                <tr>
+                    <td><strong>FIDESZ</strong> (Fiatal Demokraták Szövetsége)</td>
+                    <td>1988 (új szervezet)</td>
+                    <td>Radikális, liberális (ekkor még), alternatív generációs párt, erős nemzeti elköteleződéssel.</td>
+                </tr>
+                <tr>
+                    <td><strong>SZDSZ</strong> (Szabad Demokraták Szövetsége)</td>
+                    <td>1988 (új párt)</td>
+                    <td>Klasszikus nyugati mintájú liberális, emberjogi fókuszú, erősen antikommunista párt, szociáldemokrata elemekkel.</td>
+                </tr>
+                <tr>
+                    <td><strong>FKgP</strong> (Független Kisgazdapárt)</td>
+                    <td>1988 (újjáalakuló történelmi)</td>
+                    <td>Konzervatív, jobboldali, agrár-érdekképviseleti párt, a magántulajdon (birtokrendezés) visszaállításának követelésével.</td>
+                </tr>
+                <tr>
+                    <td><strong>KDNP</strong> (Kereszténydemokrata Néppárt)</td>
+                    <td>1989 (újjáalakuló történelmi)</td>
+                    <td>Keresztényszociális, hagyományőrző, mérsékelt jobboldali és nemzeti értékrend.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Bár az ellenzéki pártok tagsága szűk értelmiségi bázisú maradt, 1988–1989-ben képesek voltak hatalmas tömegeket megmozgatni szimbolikus ügyek mentén. Ilyen volt a Ceausescu-féle <strong>romániai falurombolás elleni tiltakozás</strong>, valamint a <strong>Bős–Nagymarosi vízlépcső</strong> (csehszlovák-magyar közös beruházású gigantikus Duna-duzzasztó) elleni környezetvédelmi tüntetéssorozat. Ez a környezetvédelmi mozgalom burkoltan magát a monolitikus, környezeti károkkal nem törődő kommunista döntéshozatali rendszert támadta, és végül sikerrel járt: a kormány a nagymarosi szakasz építését leállította.</p>
+
+        <h2 class="section-title">4. A rendszerváltoztatás kulcseseményei (1989)</h2>
+        <p>A politikai gát átszakadását <strong>1989 januárja</strong> jelentette, amikor Pozsgay Imre államminiszter egy rádióinterjúban az MSZMP vezetői közül elsőként nevezte <strong>népfelkelésnek</strong> az 1956-os eseményeket, feladva az addigi kötelező dogmát, amely azt "ellenforradalomnak" bélyegezte. Ezzel a hatalom legfelsőbb szintjén ismerték el, hogy a Kádár-rendszer alapítása jogtalan és népellenes volt, ami végleg megrendítette az állampárt morális és politikai legitimációját.</p>
+
+        <p>A reformkommunisták térnyerését mutatta, hogy <strong>Németh Miklós miniszterelnök</strong> kormánya függetlenítette magát az MSZMP keményvonalas főtitkárától, Grósz Károlytól, és az átmenet operatív levezénylőjévé vált. Az '56-os események átértékelésének egyenes következményeként <strong>1989. június 16-án</strong> sor került Nagy Imre és mártírtársai ünnepélyes, százezres tömeget vonzó újratemetésére a Hősök terén. Ez az aktus szimbolikusan a Kádár-rendszer morális temetése is volt. Július 6-án a Legfelsőbb Bíróság hivatalosan is rehabilitálta a kivégzett miniszterelnököt; ugyanezen a napon halt meg Kádár János is, akinek temetésén a múlt és a '70-es évek szociális biztonsága iránti nosztalgiából szintén tízezrek vettek részt.</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">A békés átmenet politikai mechanizmusa (1989 nyara)</div>
+            <table class="diagram-table">
+                <tr>
+                    <td style="width: 45%; background: #fff5f5; border-color: #e53e3e; color: #c53030;">
+                        <strong>ELLENZÉKI KEREKASZTAL (EKA)</strong><br>
+                        <small>MDF, SZDSZ, Fidesz, FKgP, KDNP stb.<br>Cél: Az ellenzéki egység biztosítása</small>
+                    </td>
+                    <td style="width: 10%; background: #edf2f7; border-color: #a0aec0; color: #4a5568;">&harr;</td>
+                    <td style="width: 45%; background: #ebf8ff; border-color: #3182ce; color: #2b6cb0;">
+                        <strong>MSZMP VEZETÉSE</strong><br>
+                        <small>Állampárt és szatelitszervezetei<br>(pl. Szakszervezeti Liga)</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="background: #f0fff4; border-color: #38a169; color: #22543d; padding: 12px; margin-top: 10px;">
+                        <strong>NEMZETI KEREKASZTAL-TÁRGYALÁSOK</strong><br>
+                        Eredmény: Megegyezés a békés átmenet <strong>sarkalatos törvényeiről</strong> és a szabad választások kiírásáról.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <p>1989 nyarán megkezdődtek a <span class="important-term">Nemzeti Kerekasztal-tárgyalások</span>. Az Ellenzéki Kerekasztal (EKA) sikeresen megőrizte belső egységét, így az MSZMP komoly engedményekre kényszerült. Szeptember közepére megállapodtak a békés átmenet úgynevezett <strong>sarkalatos törvényeiről</strong> (többpártrendszer, szabad választások jogi keretei, pártfinanszírozás tilalma a munkahelyeken). A még 1985-ben megválasztott, kommunista többségű parlament vállalta, hogy a megállapodásokat változtatás nélkül törvénybe iktatja és módosítja az 1949-es sztálini alkotmányt. A jogállamiság és az átmenet védelmére ekkor hozták létre az <strong>Alkotmánybíróságot</strong>.</p>
+
+        <p>A tárgyalások alatt, 1989 szeptemberében a Németh-kormány bátor és történelmi lépéssel <strong>megnyitotta a nyugati határt</strong> az NDK-ból menekült polgárok előtt. Ez a humanitárius döntés dominóeffektusként indította el a berlini fal leomlását és a keletnémet kommunista rendszer összeomlását. Helmut Kohl nyugatnémet kancellár szavaival: <em>"A falból Magyarország verte ki az első követ."</em></p>
+
+        <p>A kerekasztal-megállapodások betetőzéseként <strong>1989. október 23-án</strong> (az '56-os forradalom 33. évfordulóján) kikiáltották a <strong>harmadik Magyar Köztársaságot</strong>, ami közjogilag is felszámolta a Magyar Népköztársaságot és a Kádár-rendszert.</p>
+
+        <h3 class="subsection-title">A „négyigenes” népszavazás</h3>
+        <p>A békés folyamatot komoly belső politikai konfliktus kísérte: az államfői hatalmat gyakorló Elnöki Tanács megszűnése után kiírták az elnökválasztást. Az MSZMP azt akarta, hogy a köztársasági elnököt még a parlamenti választások előtt közvetlenül a nép válassza meg, mivel a pozíció legfőbb várományosa a rendkívül népszerű reformkommunista Pozsgay Imre volt. Ezt a forgatókönyvet az SZDSZ és a Fidesz elfogadhatatlannak tartotta (a kommunista hatalom átmentését látták benne), ezért népszavazást kényszerítettek ki. A <strong>„négyigenes” népszavazáson</strong> hajszálnyi többséggel (mindössze 6000 szavazat, 0,14% különbséggel) az az álláspont győzött, hogy a köztársasági elnököt csak a szabadon megválasztott új parlament választhatja meg, így Pozsgay esélyei elszálltak.</p>
+
+        <h2 class="section-title">5. Az első szabad választások és a nemzeti szuverenitás visszanyerése</h2>
+        <p><strong>1990 tavaszán</strong> zajlottak le a rendszerváltás utáni első szabad, többpárti országgyűlési választások, amelyek végleg lezárták a pártállami korszakot.</p>
+
+        <ul>
+            <li>A választásokat a keresztény-konzervatív, mérsékelt jobboldali <strong>MDF nyerte meg</strong>.</li>
+            <li>A győztes párt koalícióra lépett a másik két jobboldali erővel, az FKgP-vel és a KDNP-vel.</li>
+            <li>A rendszerváltás első szabadon választott miniszterelnöke a rendkívüli jogi és történeti műveltséggel rendelkező, a kerekasztal-tárgyalásokon nevet szerző <strong>Antall József</strong> lett.</li>
+            <li>A legerősebb ellenzéki párt az <strong>SZDSZ</strong> lett, mögötte a <strong>Fidesz</strong> és az újonnan alakult <strong>MSZP</strong> (Magyar Szocialista Párt) jutott be a parlamentbe. Utóbbi az MSZMP feloszlása után jött létre a reformkommunista szárnyból; bár szociáldemokrataként határozta meg magát és örökölte az állampárti vagyont, parlamenti jelenléte már ekkor jelezte a kádári korszak szociális biztonsága iránti társadalmi nosztalgiát.</li>
+        </ul>
+
+        <p>A hatékony és stabil kormányzás biztosítása érdekében a két legjelentősebb politikai erő, a kormányzó MDF és az ellenzéki SZDSZ megkötötte a történelmi <strong>MDF–SZDSZ paktumot</strong>. Ennek keretében az SZDSZ beleegyezett a kétharmados törvények körének radikális szűkítésébe, így a kormány nem vált politikai tússzá a parlamentben. Cserébe a megállapodás értelmében az ellenzék soraiból jelölhettek köztársasági elnököt: így lett a harmadik magyar köztársaság első államfője az '56-os múltú író-műfordító, <strong>Göncz Árpád</strong>, aki 1990 és 2000 között töltötte be ezt a tisztséget.</p>
+
+        <p>A politikai rendszerváltással párhuzamosan az ország visszanyerte teljes külső nemzeti szuverenitását is. A Németh-kormány által Moszkvával megkezdett tárgyalások eredményeként <strong>1991 júniusában elhagyta az utolsó szovjet katona is Magyarország területét</strong>. Ugyanebben az évben hivatalosan feloszlott a szovjet blokk katonai szervezete, a Varsói Szerződés, valamint a KGST (Kölcsönös Gazdasági Segítség Tanácsa) is. Magyarország 1991-ben vált jogilag és katonailag is teljesen független, szuverén állammá.</p>
+    </main>
+
+    <footer>
+        <p>Készült a hivatalos történelem érettségi követelményrendszer és a megadott vázlatpontok teljes körű, szöveges integrálásával.</p>
+    </footer>
+</div>
+
+</body>
+</html>

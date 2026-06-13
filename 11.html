@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11. Tétel: A kiegyezés létrejötte és a dualista állam működése</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">IV. Politikai berendezkedések a modern korban</div>
+        <h1>11. Tétel: A kiegyezés létrejötte és a dualista állam működése</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> Neoabszolutizmus és ellenállás, a kiegyezéshez vezető út, a dualista rendszer politikai és jogi struktúrája, a modern polgári állam kiépülése Magyarországon.</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (Ok-okozati összefüggések, bel- és külpolitikai kényszerpályák komparációja, közjogi viták elemzése).</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Neoabszolutizmus</span>, <span class="important-term">Bach-huszárok</span>, <span class="important-term">Passzív ellenállás</span>, <span class="important-term">Emigráció</span>, <span class="important-term">Húsvéti cikk</span>, <span class="important-term">Dualizmus</span>, <span class="important-term">Közös ügyek</span>, <span class="important-term">Delegáció</span>, <span class="important-term">Előszentesítési jog</span>, <span class="important-term">Közjogi kérdés</span>, <span class="important-term">Cenzusos választójog</span>, <span class="important-term">Állami anyakönyvezés</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">Alexander Bach, Ferenc József, Deák Ferenc, Kossuth Lajos, Gróf Andrássy Gyula, Tisza Kálmán, Wekerle Sándor</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1850-es évek</strong> (Bach-korszak), <strong>1859</strong> (Solferinói vereség), <strong>1865</strong> (Deák húsvéti cikke), <strong>1866</strong> (Königgrätzi vereség), <strong>1867</strong> (Kiegyezési törvények), <strong>1875–1890</strong> (Tisza Kálmán miniszterelnöksége), <strong>1894–1895</strong> (Egyházpolitikai törvények)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. Az önkényuralom kora Magyarországon: a Bach-rendszer (1850-es évek)</h2>
+        <p>A szabadságharc leverése után Haynau menesztését követően egy új, centralizált birodalmi berendezkedés épült ki, amelyet a történetírás <span class="important-term">neoabszolutizmusnak</span> nevez[cite: 2]. A rendszer legbefolyásosabb politikusa <strong>Alexander Bach</strong> belügyminiszter volt, aki korábbi liberális elveit feladva az alkotmányosan nem kormányozható birodalom centralizációjára törekedett, mivel úgy vélte, a nemzetiségek különben szétfeszítenék azt[cite: 2]. A rendszer szűk társadalmi bázissal rendelkezett, fő támaszai a hadsereg, a bürokrácia és a birodalmi arisztokrácia egy része voltak; még az osztrák-német polgárság sem támogatta[cite: 2].</p>
+        
+        <p>Bécs központosító közigazgatási reformokat hajtott végre Magyarországon a beolvasztás céljával: leválasztották Erdélyt, Horvátországot, a Határőrvidéket és a Szerb Vajdaságot, a megmaradt területeket pedig öt, Bécsnek alárendelt kerületre osztották[cite: 2]. A vármegyék önkormányzata megszűnt, az irányítást a köznyelv által <span class="important-term">Bach-huszároknak</span> gúnyolt, magyaros díszítésű, de császári kétfejű sassal ellátott egyenruhát viselő idegen hivatalnokok vették át[cite: 2].</p>
+
+        <p>A gazdaság és társadalom terén a rendszer nem vonta vissza az 1848-as jobbágyfelszabadítást, sőt az osztrák polgári törvénykönyv bevezetésével megvalósult a törvény előtti egyenlőség[cite: 2]. A nemesség kártérítését azonban állampapírokban, késve és részlegesen fizették ki, így büntetve őket a szabadságharcért[cite: 2]. Emiatt, valamint az új adóterhek miatt a kis- és középbirtokos nemesség jelentős része elszegényedett[cite: 2]. A gazdasági modernizáció (vasútépítés, iparfejlődés) ugyanakkor felgyorsult a belső vámhatárok eltörlése és az egységes birodalmi piac létrejötte miatt[cite: 2].</p>
+
+        <h2 class="section-title">2. A magyar társadalom ellenállásának formái</h2>
+        <p>A magyar nemzet az elnyomás ellenére három fő formában fejtett ki ellenállást a hatalommal szemben[cite: 2]:</p>
+        <ul>
+            <li><strong>Nyílt ellenállás:</strong> Szórványos gerillaharcok (pl. Noszlopy Gáspár) és merényletkísérletek (pl. Libényi János tőrtámadása Ferenc József ellen 1853-ban) jellemezték[cite: 2]. Bár katonailag esélytelenek voltak, folyamatosan emlékeztették Bécset egy új forradalom veszélyére[cite: 2].</li>
+            <li><strong>Passzív ellenállás:</strong> A birtokos nemesség zömére jellemző magatartás, amelynek vezéralakja <strong>Deák Ferenc</strong> volt[cite: 2]. Megnyilvánulása a hivatalviselés elutasítása, az adófizetés kijátszása és a szimbolikus külsőségek (pörgekalap, Kossuth-szakáll) voltak[cite: 2]. Ez a forma bizonytalanná tette a kormányzást, ám a nemesség elszegényedése miatt csak korlátozott ideig volt fenntartható[cite: 2].</li>
+            <li><strong>Emigráció:</strong> A külföldre menekült vezetők (<strong>Kossuth Lajos</strong>, Klapka György) igyekeztek a nemzetközi figyelmet a magyar ügyre irányítani, és kapcsolatot kerestek Ausztria ellenségeivel (pl. Bismarckkal)[cite: 2]. Korlátozták az osztrák külpolitika mozgásterét; Ferenc József pl. az 1859-es solferinói vereség után egy magyar felkeléstől tartva kötött gyorsan békét[cite: 2].</li>
+        </ul>
+
+        <h2 class="section-title">3. A neoabszolutizmus válsága és a kiegyezéshez vezető út</h2>
+        <p>Az 1850-es évek végére a Bach-rendszer a felduzzasztott bürokrácia és hadsereg kiadásai miatt pénzügyi csődbe jutott[cite: 2]. Az 1859-es észak-itáliai vereség (Lombardia elvesztése) után Ferenc József menesztette Bachot, és belátta, hogy birodalma nagyhatalmi státuszát a nemzetállamokkal (Németország, Olaszország) szemben csak a belső viszonyok rendezésével, a magyarokkal való megegyezéssel tarthatja meg[cite: 2]. A magyar nemesség szintén hajlott a kompromisszumra, mivel anyagilag kimerült, és felismerte, hogy a nemzetiségekkel szembeni vezető szerepét, valamint a külső (orosz, német) fenyegetéssel szembeni védelmet a Habsburg Birodalmon belül tudja a leginkább biztosítani[cite: 2].</p>
+
+        <p>A közeledésnek döntő lökést Deák Ferenc <strong>1865-ös húsvéti cikke</strong> adott, amelyben kijelentette: a magyarság a birodalom biztonsága érdekében kész lemondani az önálló hadügy és külügy követeléséről, ha az államélet többi területén visszaállítják Magyarország alkotmányos önállóságát[cite: 2]. A folyamatot végül az 1866-os porosz-osztrák háborúban elszenvedett katasztrofális osztrák vereség (<span class="important-term">königgrätzi csata</span>) gyorsította fel[cite: 2]. Ferenc József kénytelen volt engedni: összehívta a magyar országgyűlést, kinevezte miniszterelnökké a '48-as múltú, de kompromisszumkész gróf <strong>Andrássy Gyulát</strong>, és 1867-ben szentesítette a kiegyezési törvényeket, majd magyar királlyá koronázták[cite: 2].</p>
+
+        <h2 class="section-title">4. A dualista állam politikai és jogi szerkezete</h2>
+        <p>Az 1867-es törvények értelmében létrejött az <strong>Osztrák–Magyar Monarchia</strong>, amely egy kétközpontú (dualista), alkotmányos monarchia volt[cite: 2]. A berendezkedés az 1723-as Pragmatica Sanctión alapult (közös védelem elve)[cite: 2].</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">Az Osztrák–Magyar Monarchia dualista államszervezete</div>
+            <table class="diagram-table">
+                <tr>
+                    <th colspan="2">KÖZÖS URALKODÓ (Osztrák császár és Magyar király)<br>Legfőbb hadúr, előszentesítési jog birtokosa</th>
+                </tr>
+                <tr>
+                    <td style="width: 50%; background: #edf2f7; border-color: var(--primary-color); color: var(--primary-color);"><strong>LAJTÁNTÚL (Ausztria)</strong></td>
+                    <td style="width: 50%; background: #edf2f7; border-color: var(--primary-color); color: var(--primary-color);"><strong>MAGYARORSZÁG (Erdéllyel unióban)</strong></td>
+                </tr>
+                <tr>
+                    <td>Osztrák kormány és parlament (Bécs)</td>
+                    <td>Felelős magyar kormány és parlament (Pest-Buda)</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="background: var(--highlight-bg); border-color: var(--accent-color); color: #744210;">
+                        <strong>KÖZÖS ÜGYEK (Közös minisztériumok):</strong><br>
+                        Külügy &bull; Hadügy &bull; Pénzügy (a közös kiadásokra)<br>
+                        <small>Alkotmányos ellenőrzésük: a 60-60 fős parlamenti <strong>delegációk</strong> útján</small>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <p>A berendezkedés szerint a belügyekben mindkét fél önálló volt, saját kétkamarás törvényhozással és felelős kormánnyal rendelkezett[cite: 2]. Magyarországon a parlamentet korlátozott, cenzusos választójog alapján választották[cite: 2]. Bár a magyar honvédség is megalakult, ez csak kiegészítő erő volt: a közös hadsereget közvetlenül az uralkodó irányította legfőbb hadúri jogkörében, igaz, az újoncokat és a hadiadót a magyar országgyűlés szavazta meg[cite: 2]. Az uralkodó erős pozícióját biztosította a törvényben nem rögzített, de a gyakorlatban érvényesülő <span class="important-term">előszentesítési jog</span> is (minden törvényjavaslatot bemutatás előtt jóvá kellett hagynia)[cite: 2].</p>
+
+        <h2 class="section-title">5. Közjogi viták és a kiegyezés értékelése</h2>
+        <p>A kiegyezés megosztotta a magyar társadalmat, a dualizmus korának pártpolitikai küzdelmeit az Ausztriához fűződő viszony, az úgynevezett <span class="important-term">közjogi kérdés</span> határozta meg[cite: 2]. A rendszer ellenzői sokallták az uralkodónak tett engedményeket[cite: 2]. A legjelentősebb eszmei kritikát Kossuth Lajos fogalmazta meg híres <strong>Cassandra-levelében (1867)</strong>, amelyben azzal vádolta Deákot, hogy a közös ügyek elfogadásával feladta az ország önállóságát, és Magyarország sorsát egy bukásra ítélt birodalomhoz kötötte[cite: 2]. Kossuth tiltakozásul élete végéig emigrációban maradt Torinóban ("turini remete")[cite: 2]. Az utókor és Deák szerint viszont a kiegyezés a reálisan elérhető legjobb kompromisszum volt, amely több mint 50 évig tartó stabilitást és békés fejlődést biztosított az országnak[cite: 2].</p>
+
+        <h2 class="section-title">6. A polgári állam kiépítése Magyarországon (1875–1895)</h2>
+        <p>A kiegyezés után a stabil belpolitikai helyzetben felgyorsult a modern polgári intézményrendszer kiépítése[cite: 2]. A folyamat legjelentősebb alakja <strong>Tisza Kálmán</strong> miniszterelnök (1875–1890) volt, akinek kormányzása alatt átfogó reformok valósultak meg[cite: 2]:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Reformterület</th>
+                    <th>A Tisza-kormány intézkedései és következményei</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Közigazgatás</strong></td>
+                    <td>Felszámolta a korábbi kiváltságos területeket (pl. székely székek, Hajdúkerület), és egységes megyerendszert hozott létre[cite: 2]. A megyék önkormányzatát korlátozta, a megyei tisztviselők állami fizetést kaptak, így a vármegye elvesztette korábbi Habsburg-ellenes rendi ellenállási szerepét[cite: 2].</td>
+                </tr>
+                <tr>
+                    <td><strong>Igazságszolgáltatás</strong></td>
+                    <td>Létrehozta a közigazgatástól teljesen elválasztott, független állami bírói szervezetet, megszüntetve a megyék korábbi bíráskodási jogkörét[cite: 2].</td>
+                </tr>
+                <tr>
+                    <td><strong>Rendvédelem</strong></td>
+                    <td>A közrend hatékony biztosítására a városokban modern állami rendőrséget, vidéken pedig a szigorú fegyelméről ismert csendőrséget szervezték meg[cite: 2].</td>
+                </tr>
+                <tr>
+                    <td><strong>Oktatás és Egészségügy</strong></td>
+                    <td>Kiépült a közkórházak hálózata[cite: 2]. Az 1868-as Eötvös-féle népiskolai törvény szellemében új állami iskolák és gimnáziumok nyíltak, a 6–12 évesek kötelező tankötelezettségét betartatták, így az analfabetizmus radikálisan visszaszorult[cite: 2].</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 class="subsection-title">Az egyházpolitikai harc és a Wekerle-kormány (1894–1895)</h3>
+        <p>A modernizáció következő logikus lépése az állam és egyház feladatköreinek szétválasztása, a szekularizáció volt[cite: 2]. Nyugat-európai mintára 1894–1895-ben <strong>Wekerle Sándor</strong> miniszterelnöksége alatt a parlament elfogadta a liberális egyházpolitikai törvényeket[cite: 2]. Bevezették a kötelező <span class="important-term">polgári házasságkötést</span> és az <span class="important-term">állami anyakönyvezést</span>, ezzel az állam átvette az egyházak korábbi legfontosabb nyilvántartási és civil funkcióit[cite: 2]. Bár a teljes szétválasztás nem valósult meg – az elemi iskolák mintegy háromnegyede a 20. század elején is egyházi (felekezeti) kézben maradt –, a törvények biztosították a modern polgári jogegyenlőség működését Magyarországon[cite: 2].</p>
+    </main>
+
+    <footer>
+        <p>Készült a hivatalos érettségi követelmények és a megadott forrásanyag alapján, kizárólag a magyar történelem releváns eseményeire fókuszálva.</p>
+    </footer>
+</div>
+
+</body>
+</html>

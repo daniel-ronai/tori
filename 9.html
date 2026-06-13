@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9. Tétel: A polgári átalakulás kérdései Magyarországon a reformkor és az 1848-as forradalom időszakában</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        .video-btn-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .video-link {
+            display: inline-block;
+            background-color: #e53e3e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .video-link:hover {
+            background-color: #c53030;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(197, 48, 48, 0.3);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">III. Egyén, közösség, társadalom</div>
+        <h1>9. Tétel: A polgári átalakulás kérdései Magyarországon a reformkor és az 1848-as forradalom időszakában</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> 4.1 (A reformkor fő kérdései), 4.2 (Széchenyi és Kossuth programja), 4.4 (Az áprilisi törvények és a polgári átalakulás)</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (Politikai eszmerendszerek, társadalmi rétegződés, gazdasági-jogi modernizáció)</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Rendi dualizmus</span>, <span class="important-term">Önkéntes / Kötelező örökváltság</span>, <span class="important-term">Érdekegyesítés</span>, <span class="important-term">Ősiség eltörlése</span>, <span class="important-term">Közteherviselés</span>, <span class="important-term">Népképviselet</span>, <span class="important-term">Cenzusos választójog</span>, <span class="important-term">Alkotmányos monarchia</span>, <span class="important-term">Államnyelv</span>, <span class="important-term">Védegylet</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">Gróf Széchenyi István, Báró Wesselényi Miklós, Kossuth Lajos, Deák Ferenc, Kölcsey Ferenc, Gróf Batthyány Lajos, Petőfi Sándor</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1825</strong> (MTA felajánlás), <strong>1830</strong> (A Hitel megjelenése), <strong>1844</strong> (A magyar államnyelv), <strong>1848. március 15.</strong> (Pesti forradalom), <strong>1848. ápril 11.</strong> (Áprilisi törvények)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. A politikai élet színterei a reformkorban</h2>
+        <p>A 19. század első felében Magyarországon a <span class="important-term">rendi dualizmus</span> keretei működtek: a Habsburg uralkodó és a magyar rendek közösen kormányoztak. Bár a külügy, a hadügy és a pénzügy közvetlen uralkodói felségjognak számítottak (a birodalmi egység miatt), a rendek kezében maradt a törvényhozás és a helyi közigazgatás, ami biztosította az ország sajátos különállását a Birodalmon belül.</p>
+        
+        <p>A politikai küzdelmek legfontosabb színtere a Pozsonyban ülésező <strong>kétkamarás rendi országgyűlés (diéta)</strong> volt. A <span class="important-term">Felsőtáblán</span> a főnemesség (arisztokrácia) és a főpapság ülésezett személyesen, míg az <span class="important-term">Alsótáblán</span> a vármegyék (megyénként 2-2 követ) és a szabad királyi városok képviselői vettek részt. Az alsótábla követeit szigorú <span class="important-term">követutasításos rendszer</span> kötötte, azaz a helyi megyei közgyűlés döntései alapján kellett szavazniuk.</p>
+
+        <p>A politizálás másik alapvető bázisa a <strong>vármegyerendszer</strong> volt. A megyegyűléseken minden helyi nemes személyenkénti szavazati joggal rendelkezett. Mivel a vármegyék megtagadhatták a kormányzat törvénytelennek tartott rendeleteinek végrehajtását, a megyerendszer a királyi abszolutizmussal szembeni nemzeti ellenállás legfőbb bástyájává vált.</p>
+
+        <h2 class="section-title">2. A magyar társadalom struktúrája és a reformok szükségessége</h2>
+        <p>A napóleoni háborúk (1799–1815) idején tapasztalt gazdasági fellendülés (konjunktúra) elfedte a strukturális problémákat. A háborúk után azonban a gabona- és gyapjúkonjunktúra összeomlott. A magyar birtokos nemesség ráébredt, hogy a modernizáció hiánya, az elavult technológia és az ingyenmunkára épülő, de rendkívül alacsony hatékonyságú <span class="important-term">robotoltató jobbágymunka</span> miatt áruikkal versenyképtelenek a világpiacon. A kiváltságos rétegek egy része felismerte, hogy saját gazdasági túlélésük záloga a társadalom alapvető, polgári reformja.</p>
+
+        <p>A korabeli magyar társadalom erősen tagolt, feudális szerkezetű volt:</p>
+        <ul>
+            <li><strong>Arisztokrácia (főnemesség):</strong> Óriási nagybirtokokkal rendelkeztek, alapvetően udvarhűek és konzervatívok voltak, de olyan kivételes formátumú vezetők is kikerültek belőlük, mint Széchenyi vagy Batthyány.</li>
+            <li><strong>Középbirtokos nemesség:</strong> A vármegyei elit és a reformok motorja (Deák, Kölcsey). Anyagi helyzetük romlása miatt fogékonyak voltak a modernizációra.</li>
+            <li><strong>Kisnemesség ("bocskoros nemesek"):</strong> Birtoktalan vagy minimális földdel rendelkező, de nemesi adómentességet élvező tömeg. Kiváltságaikhoz görcsösen ragaszkodtak, így kezdetben a konzervatívok könnyen manipulálták őket a reformok ellen. Szülötteik közül a tanult értelmiségiek (<span class="important-term">honoráciorok</span>, pl. Kossuth) viszont a radikális reformerek közé álltak.</li>
+            <li><strong>Polgárság:</strong> Kis létszámú, jórészt német vagy zsidó gyökerű réteg. Gazdaságilag fejlődtek, de politikai súlyuk csekély volt (a városoknak együttesen csak egy szavazata volt a diétán).</li>
+            <li><strong>Jobbágyság:</strong> A lakosság elsöprő többsége. Földtelen zselléresedés jellemezte őket, a nemes-jobbágy ellentét komoly robbanással fenyegetett (ezt mutatta meg az 1831-es kolerafelkelés is).</li>
+        </ul>
+
+        <h2 class="section-title">3. Széchenyi István és Kossuth Lajos reformprogramjának komparációja</h2>
+        <p>A reformkorban két alapvető koncepció ütközött meg a polgári átalakulás végrehajtásának módjáról és üteméről. Bár a végcél (egy modern, polgári Magyarország) hasonló volt, a módszerekben mély ellentét feszült köztük.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Szempont</th>
+                    <th>Gróf Széchenyi István koncepciója</th>
+                    <th>Kossuth Lajos és a liberális többség programja</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Társadalmi bázis / Vezető erő</strong></td>
+                    <td>A reformokat a nagybirtokos <strong>arisztokrácia</strong> vezetésével, felülről kell végrehajtani.</td>
+                    <td>Az arisztokrácia alkalmatlan; a vezető erő a <strong>köznemesség</strong> és a polgárosodó értelmiség.</td>
+                </tr>
+                <tr>
+                    <td><strong>Jobbágykérdés</strong></td>
+                    <td>Lassú, <span class="important-term">önkéntes örökváltság</span> (a jobbágy és földesúr szabad megállapodása alapján).</td>
+                    <td>Azonnali, kötelező, államilag támogatott <span class="important-term">kötelező örökváltság</span> (érdekegyesítés).</td>
+                </tr>
+                <tr>
+                    <td><strong>Gazdaságpolitika</strong></td>
+                    <td>Az infrastruktúra fejlesztése (Hitel, Lánchíd, folyószabályozás), hitelképtelenséget okozó <span class="important-term">ősiség</span> eltörlése.</td>
+                    <td>Önálló nemzeti ipar fejlesztése, az osztrák verseny ellen védővámok bevezetése (<span class="important-term">Védegylet</span>).</td>
+                </tr>
+                <tr>
+                    <td><strong>Ausztriához való viszony</strong></td>
+                    <td>Kerülni kell a konfliktust a Habsburg-udvarral; a Monarchián belüli lojális fejlődés híve.</td>
+                    <td>Bátran fel kell vállalni a politikai konfliktust Béccsel az önálló magyar gazdaság- és belpolitika érdekében.</td>
+                </tr>
+                <tr>
+                    <td><strong>Politikai módszer</strong></td>
+                    <td>Óvatos, szerves, evolúciós fejlődés. Elutasítja a tömegek bevonását (fél a forradalomtól).</td>
+                    <td>Gyors, radikális reformok, a nyilvánosság és a tömegek mozgósítása (Pesti Hírlap, sajtó).</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">4. A nemzetiségi kérdés és a gazdasági fellendülés</h2>
+        <p>A reformkori nemzeti ébredés magával hozta a modern nemzetfelfogást. A magyar liberális vezetőréteg az <span class="important-term">egységes politikai nemzet</span> koncepcióját vallotta: eszerint az ország határain belül minden állampolgár – etnikumától függetlenül – a jogkiterjesztés révén a magyar nemzet egyenjogú tagjává válik. Nem adtak viszont kollektív autonómiát a hazai nemzetiségeknek (szlovákok, románok, szerbek), ami komoly feszültséget szült, és amit a bécsi udvar később tudatosan ki is használt. Az egyetlen teljes sikert elért nemzeti ügy a nyelv kérdése volt: <strong>1844-ben a latin helyett a magyar lett a hivatalos államnyelv.</strong></p>
+
+        <p>A politikai viták mögött az ország látványos modernizáción ment keresztül. Megalakultak az első hazai bankok, fejlődött a gyáripar (pl. Ganz Ábrahám vasöntödéje), és <strong>1846-ban Pest és Vác között megnyílt az első magyar vasútvonal</strong>. Pest-Buda az ország vitathatatlan gazdasági és kulturális központjává nőtte ki magát.</p>
+
+        <h2 class="section-title">5. 1848: A pesti forradalom és az áprilisi törvények</h2>
+        <p>Az 1848-as európai forradalmi hullám ("népek tavasza") elsöpörte a pozsonyi országgyűlés politikai patthelyzetét. <strong>1848. március 15-én a pesti radikális ifjúság (a márciusi ifjak)</strong> vérontás nélkül győzelemre vitte a forradalmat: kinyomtatták a cenzúrázatlan <span class="important-term">12 pontot</span>, a Nemzeti dalt, és elfogadtatták követeléseiket a Helytartótanáccsal.</p>
+
+        <p>A forradalmi nyomás hatására az uralkodó kinevezte az első független, felelős magyar kormányt <strong>gróf Batthyány Lajos</strong> vezetésével, majd <strong>1848. ápril 11-én V. Ferdinánd szentesítette az áprilisi törvényeket</strong>, amelyek jogilag rögzítették a polgári átalakulást.</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">Az 1848. áprilisi törvények központi pillérei</div>
+            <table class="diagram-table">
+                <tr>
+                    <th>TÁRSADALMI FELSZABADÍTÁS</th>
+                    <th>POLITIKAI MODERNIZÁCIÓ</th>
+                </tr>
+                <tr>
+                    <td><span class="important-term">Kötelező örökváltság:</span> A robot, a tized és a földesúri úriszék azonnali eltörlése.<br><br><span class="important-term">Közteherviselés:</span> A nemesi adómentesség teljes felszámolása.<br><br>Törvény előtti egyenlőség és sajtószabadság.</td>
+                    <td><span class="important-term">Alkotmányos monarchia:</span> Az uralkodó csak a Pesten székelő, felelős magyar minisztériumon keresztül kormányozhat.<br><br><span class="important-term">Népképviseleti országgyűlés:</span> A rendi gyűlés helyett cenzusos választójogon alapuló parlament.<br><br>Nemzetőrség felállítása és unió Erdéllyel.</td>
+                </tr>
+            </table>
+        </div>
+
+        <p><strong>A törvények strukturális problémája (A jövőbeli konfliktus forrása):</strong> Bár az áprilisi törvények zseniálisan fektették le a polgári állam alapjait, nem rendezték egyértelműen az Ausztriához fűződő viszonyt (a hadügy- és pénzügyminisztérium önállósága sértette a birodalmi egységet), és teljesen kimaradt belőlük a hazai nemzetiségek kollektív jogainak biztosítása. Ez a két hiányosság vezetett egyenesen az 1848–49-es önvédelmi háborúhoz.</p>
+    </main>
+
+    <footer>
+        <p>Készült az érettségi követelmények és a hivatalos tematikák alapján. Nemzeti és polgári modernizáció modul.</p>
+    </footer>
+</div>
+
+</body>
+</html>

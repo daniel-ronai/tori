@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10. Tétel: A felvilágosodás politikai alapelvei, a brit és az amerikai alkotmányos rendszer működése</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        .video-btn-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .video-link {
+            display: inline-block;
+            background-color: #e53e3e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            box-shadow: 0 4px 6px rgba(229, 62, 62, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .video-link:hover {
+            background-color: #c53030;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(197, 48, 48, 0.3);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">IV. Politikai berendezkedések a modern korban</div>
+        <h1>10. Tétel: A felvilágosodás politikai alapelvei, a brit és az amerikai alkotmányos rendszer működése (17-18. század)</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> Alkotmányosság, hatalommegosztás, parlamentarizmus, képviseleti demokrácia, szövetségi köztársaság.</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (A modern demokrácia és az intézményi fékek és egyensúlyok rendszerének megszületése).</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Abszolutizmus</span>, <span class="important-term">Puritánok</span>, <span class="important-term">Jognyilatkozat (1689)</span>, <span class="important-term">Alkotmányos monarchia</span>, <span class="important-term">Cenzusos választójog</span>, <span class="important-term">Hatalommegosztás</span>, <span class="important-term">Népfelség elve</span>, <span class="important-term">Függetlenségi Nyilatkozat (1776)</span>, <span class="important-term">Szövetségi köztársaság</span>, <span class="important-term">Nagy kompromisszum</span>, <span class="important-term">Vétójog</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek</div>
+                <div class="quick-value">I. Károly, Oliver Cromwell, II. Jakab, Orániai Vilmos, George Washington, John Locke, Montesquieu</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>1640</strong> (A parlamenti ellenállás kezdete), <strong>1642–1649</strong> (Angol polgárháború), <strong>1688</strong> (Dicsőséges forradalom), <strong>1689</strong> (Jognyilatkozat), <strong>1773</strong> (Bostoni teadélután), <strong>1775–1783</strong> (Amerikai függetlenségi háború), <strong>1776. július 4.</strong> (Függetlenségi Nyilatkozat), <strong>1789</strong> (Az USA alkotmányának hatályba lépése)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. Gazdasági és politikai feszültségek a 17. századi Angliában</h2>
+        <p>A 17. század elején Anglia ugrásszerű népességnövekedést és kereskedelmi fellendülést élt át. A mezőgazdaságban zajló <span class="important-term">bekerítések</span> révén a vállalkozó köznemesség (gentry) és a városi polgárság gazdaságilag megerősödött, London lakossága pedig elérte a 300 000 főt. Amikor 1603-ban a skót Stuart-dinasztia került a trónra, az uralkodók a kontinentális mintára épülő <span class="important-term">abszolutizmus</span> kiépítésére törekedtek, és mellőzték a rendi parlamentet.</p>
+        
+        <p>I. Károly (1625–1649) parlament nélküli kormányzása mélyen sértette a tőkésedő rétegek gazdasági érdekeit az új adók önkényes kivetése miatt. Az elégedetlenség vallási köntöst kapott: az angol reformátusok, a <span class="important-term">puritánok</span> a kálvini tanokra hivatkozva hirdették, hogy a zsarnok uralkodóval szemben a nép jogosan lázadhat fel. A feszültség akkor torkollott nyílt válságba, amikor a skótok felkelése miatt a király kénytelen volt 1640-ben összehívni a parlamentet az adók megszavazására. A parlament azonban adózás helyett jogokat és felelős kormányt követelt. A király fegyveres fellépési kísérlete a londoni polgárok ellenállásán elbukott, így I. Károly északra menekült sereget gyűjteni: 1642-ben kitört az angol polgárháború.</p>
+
+        <h2 class="section-title">2. A polgárháborútól a dicsőséges forradalomig</h2>
+        <p>Az angol polgárháború (1642–1649) az ország történetének egyik legsúlyosabb demográfiai katasztrófáját hozta, a lakosság mintegy 5%-a vesztette életét. A fordulatot a puritán képviselő, <strong>Oliver Cromwell</strong> hozta meg, aki nehézlovas elithadseregével (a „vasbordájúakkal”) legyőzte a királyi erőket. 1649-ben, az európai történelemben példátlan módon, a parlament bírósági ítélet alapján kivégeztette I. Károlyt.</p>
+
+        <p>A királyság bukása után Anglia papíron köztársaság lett, a gyakorlatban azonban Cromwell nyers katonai diktatúrát épített ki. A belső elégedetlenséget külső háborúkkal palástolta: legyőzte a hollandokat (Angliát tengeri nagyhatalommá téve), valamint erőszakkal és unióval felszámolta Skócia és a katolikus Írország önkormányzatát, lefektetve a későbbi Nagy-Britannia alapjait. Cromwell 1658-as halála után a stabilitásra vágyó parlament visszahívta a Stuartokat. Amikor azonban II. Jakab nyíltan katolikusbarát és abszolutista politikát folytatott, a parlament 1688-ban elmozdította a trónról, és a holland <strong>Orániai Vilmost</strong> hívta meg a koronára. Ez a vérontás nélküli rendszerváltás volt a <span class="important-term">„dicsőséges forradalom”</span>.</p>
+
+        <h2 class="section-title">3. A brit alkotmányos monarchia intézményi működése</h2>
+        <p>Az új uralkodó 1689-ben szentesítette a <span class="important-term">Jognyilatkozatot</span>, amely korlátozta a királyi hatalmat és rögzítette az alkotmányos monarchia alapelveit. A rendszer lényege az elhíresült szállóigében rejlik: <em>„A király uralkodik, de nem kormányoz”</em>. A hatalmi ágak megosztása a gyakorlatban biztosította, hogy az önkényuralom ne térhessen vissza.</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">A brit alkotmányos monarchia hatalmi szerkezete</div>
+            <table class="diagram-table">
+                <tr>
+                    <th>TÖRVÉNYHOZÓ HATALOM</th>
+                    <th>VÉGREHAJTÓ HATALOM</th>
+                    <th>BÍRÓI HATALOM</th>
+                </tr>
+                <tr>
+                    <td><strong>Kétkamarás Parlament</strong><br><br>• <span class="important-term">Alsóház (House of Commons):</span> cenzusos választójog alapján megválasztott képviselők.<br>• <span class="important-term">Felsőház (House of Lords):</span> születési vagy kinevezési alapon bent ülő főnemesek.<br><br>Feladata: Törvényalkotás és az adók megszavazása.</td>
+                    <td><strong>Kormány és Miniszterelnök</strong><br><br>• A kormányt a miniszterelnök vezeti, aki irányítja a hadsereget és a hivatalokat.<br>• A király nevezi ki a kormányfőt (mindig a választáson győztes párt vezérét).<br><br>A kormány a parlamentnek tartozik politikai felelősséggel.</td>
+                    <td><strong>Független Bíróságok</strong><br><br>• Teljesen elkülönülnek a törvényhozástól és a végrehajtó hatalomtól is.<br><br>Feladata: A pártatlan igazságszolgáltatás biztosítása a politikai nyomástól mentesen.</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2 class="section-title">4. Az észak-amerikai brit gyarmatok konfliktusa az anyaországgal</h2>
+        <p>Észak-Amerika keleti partvidékén a 18. századra 13 brit gyarmat jött létre. Az első telepesek jórészt üldözött radikális protestánsok voltak, akik erős önkormányzati és demokratikus kultúrát honosítottak meg. A gyarmatok gazdaságilag két részre tagozódtak: északon a kisbirtokos farmergazdálkodás és a hajóipar, míg délen a fekete rabszolgák munkájára épülő, gyapotot és dohányt termelő ültetvényes gazdálkodás dominált.</p>
+
+        <p>A viszony a hétéves háború (1756–1763) után mérgesedett el, amikor London az amerikaiakkal akarta megfizettetni a háború költségeit új adók és vámok formájában, miközben csorbította a gyarmatok önigazgatását. Az amerikaiak felállították a <strong>„képviselet nélkül nincs adózás”</strong> elvét, követelve, hogy ha adóznak, küldhessenek képviselőket a londoni parlamentbe. A feszültséget a teakereskedelmi monopólium tetőzte be, ami az 1773-as <span class="important-term">bostoni teadélutánhoz</span>, majd a fegyveres függetlenségi háború (1775–1783) kirobbanásához vezetett.</p>
+
+        <h2 class="section-title">5. Az Amerikai Egyesült Államok születése és alkotmánya (1789)</h2>
+        <p>1776. július 4-én a philadelphiai kongresszus elfogadta a <span class="important-term">Függetlenségi Nyilatkozatot</span>. A dokumentum a felvilágosodás (John Locke és Montesquieu) államelméleti hatását tükrözte: rögzítette a polgári szabadságjogokat, a népfelség elvét és a zsarnok uralkodó elleni jogos felkelés jogát. A <strong>George Washington</strong> által vezetett amerikai seregek – francia katonai segítséggel – végül térdre kényszerítették a briteket, akik 1783-ban elismerték az USA függetlenségét.</p>
+
+        <p>A győztes államok hosszú viták után egy erős központi hatalommal rendelkező <span class="important-term">szövetségi köztársaságot</span> hoztak létre, amelynek 1789-es alkotmánya a világ első működő modern demokráciája lett. Az alkotmány az intézményi fékek és egyensúlyok rendszerén alapul:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Hatalmi ág</th>
+                    <th>Intézmény / Vezető</th>
+                    <th>Működési mechanizmus és hatáskörök</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Törvényhozás</strong></td>
+                    <td><strong>Kongresszus (Kétkamarás)</strong></td>
+                    <td>A „nagy kompromisszum” alapján áll fel:<br>• <strong>Képviselőház:</strong> a tagállamok a népességük arányában küldenek tagokat.<br>• <strong>Szenátus:</strong> minden tagállam egységesen 2-2 szenátorral képviselteti magát (a kis államok védelmében). A törvényekhez mindkét ház jóváhagyása kell. A választójogot ekkor még vagyoni cenzus korlátozta (nők, rabszolgák, indiánok kizárva).</td>
+                </tr>
+                <tr>
+                    <td><strong>Végrehajtás</strong></td>
+                    <td><strong>Az Elnök (4 évre választva)</strong></td>
+                    <td>Irányítja a szövetségi kormányt, a hadsereg főparancsnoka, vezeti a külügyet. A Kongresszussal szemben <strong>korlátozott vétójoga</strong> van: a visszaküldött törvényt a parlament csak kétharmados többséggel fogadhatja el újra. Ő nevezi ki a Legfelsőbb Bíróság tagjait.</td>
+                </tr>
+                <tr>
+                    <td><strong>Bíráskodás</strong></td>
+                    <td><strong>Legfelsőbb Bíróság</strong></td>
+                    <td>A végrehajtó és törvényhozó hatalomtól teljesen független testület. A bírákat az elnök nevezi ki, de megbízatásuk életük végéig szól, így függetlenek az aktuális politikai vezetéstől. Feladatuk az alkotmányosság felügyelete.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Az amerikai föderális rendszer zsenialitása a <strong>megosztott szuverenitásban</strong> rejlett: a központi (szövetségi) kormányzat kizárólagos hatáskörébe utalták a hadügyet, külügyet, pénzügyet és a külkereskedelmet. Minden egyéb területen (közigazgatás, oktatás, igazságügy, büntetőjog) a tagállamok megőrizték saját törvényhozásukat és kormányukat, ami a mai napig magyarázza az egyes államok közötti jelentős jogi eltéréseket (pl. halálbüntetés vagy abortusz szabályozása).</p>
+    </main>
+
+    <footer>
+        <p>Készült az érettségi követelmények és a hivatalos tematikák alapján. Politikai rendszerek modern kori egyetemes története modul.</p>
+    </footer>
+</div>
+
+</body>
+</html>

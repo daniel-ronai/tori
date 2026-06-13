@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Tétel: A középkori város és a céhes ipar</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fa;
+            --container-bg: #ffffff;
+            --text-color: #2c3e50;
+            --text-muted: #5a6c7d;
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --border-color: #e2e8f0;
+            --highlight-bg: #fffaf0;
+            --table-header-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .topic-meta {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .exam-specs {
+            background-color: #edf2f7;
+            padding: 15px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .exam-specs ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exam-specs li {
+            margin-bottom: 5px;
+        }
+
+        .exam-specs strong {
+            color: var(--primary-color);
+        }
+
+        .quick-study-box {
+            background-color: var(--highlight-bg);
+            border: 1px solid #feebc8;
+            border-left: 5px solid var(--accent-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .quick-study-box h2 {
+            font-size: 1.3rem;
+            color: #b7791f;
+            margin-bottom: 15px;
+        }
+
+        .quick-grid {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .quick-row {
+            display: table-row;
+        }
+
+        .quick-label {
+            display: table-cell;
+            font-weight: bold;
+            width: 25%;
+            padding: 6px 10px 6px 0;
+            color: #744210;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        .quick-value {
+            display: table-cell;
+            padding: 6px 0 6px 10px;
+            border-bottom: 1px solid #fbd38d;
+            vertical-align: top;
+        }
+
+        h2.section-title {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3.subsection-title {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            text-align: justify;
+            color: #333333;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            font-family: "Georgia", Georgia, Cambria, "Times New Roman", Times, serif;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .important-term {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #fffaf0;
+            font-weight: bold;
+            color: #b7791f;
+            padding: 2px 6px;
+            border-radius: 4px;
+            border: 1px solid #feebc8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-weight: 600;
+            border: 1px solid var(--primary-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            vertical-align: top;
+            font-family: "Georgia", Georgia, serif;
+            font-size: 1rem;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .diagram-container {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .diagram-title {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .diagram-table {
+            width: 100%;
+            margin: 0;
+        }
+
+        .diagram-table td {
+            text-align: center;
+            background: white;
+            font-family: sans-serif;
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        .diagram-table th {
+            text-align: center;
+            background: var(--secondary-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="topic-meta">II. NÉPESSÉG, TELEPÜLÉS, ÉLETMÓD</div>
+        <h1>4. Tétel: A középkori város és a céhes ipar</h1>
+        <div class="exam-specs">
+            <ul>
+                <li><strong>Hivatalos érettségi követelményrendszeri modulok:</strong> A középkori városok kialakulása és kiváltságai, a városi társadalom rétegződése, a céhes ipar működése és a középkori kereskedelmi útvonalak.</li>
+                <li><strong>Elvárt tudásszint:</strong> Középszint és Emelt szint (Gazdasági-társadalmi ok-okozati összefüggések, technikai újítások és kereskedelmi mechanizmusok).</li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="quick-study-box">
+        <h2>💡 Vizsga-gyorssegély (Kulcslexika)</h2>
+        <div class="quick-grid">
+            <div class="quick-row">
+                <div class="quick-label">Kulcsfogalmak</div>
+                <div class="quick-value"><span class="important-term">Városi önkormányzat</span>, <span class="important-term">Árumegállító jog</span>, <span class="important-term">Patrícius</span>, <span class="important-term">Plebejus</span>, <span class="important-term">Céh</span>, <span class="important-term">Kontár</span>, <span class="important-term">Levantei kereskedelem</span>, <span class="important-term">Hanza-szövetség</span>, <span class="important-term">Karavella</span>, <span class="important-term">Árutermelés</span></div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsszemélyek / Helyszínek</div>
+                <div class="quick-value">Johannes Gutenberg, Velence, Genova, Firenze, Hamburg, Bréma, Flandria, Champagne</div>
+            </div>
+            <div class="quick-row">
+                <div class="quick-label">Kulcsdátumok</div>
+                <div class="quick-value"><strong>11–13. század</strong> (Az érett középkor, a nyugat-európai városfejlődés kibontakozása), <strong>1347</strong> (A nagy európai pestisjárvány), <strong>1450 körül</strong> (A könyvnyomtatás feltalálása)</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <h2 class="section-title">1. A városfejlődés alapfeltételei a középkorban</h2>
+        <p>A kora középkori Nyugat-Európában a rendkívül alacsony terményfelesleg és a katasztrofális közbiztonság (különböző külső támadások és belső feudális háborúk) következtében az ókorban virágzó városok teljesen elnéptelenedtek[cite: 1]. Legfeljebb a Földközi-tenger partvidékén maradtak fenn városokra emlékeztető települések, de ezek is csak töredékét foglalták el ókori elődeik területének[cite: 1].</p>
+        <p>A gazdasági és demográfiai fordulat a <strong>11. században</strong> következett be, amikor a mezőgazdaság fejlődésének köszönhetően visszaszorultak az éhínségek[cite: 1]. A jobban táplált lakosság ellenállóbbá vált a betegségekkel szemben, ami Nyugat-Európában jelentős népességnövekedést eredményezett[cite: 1]. Európa lakossága a 11. századi 38 millióról a 13. század végére <strong>75 millióra</strong> duzzadt[cite: 1]. A túlnépesedő régiókból telepesek indultak el a ritkábban lakott kelet-közép-európai vidékek felé, elterjesztve a fejlettebb technológiákat[cite: 1].</p>
+        <p>A mezőgazdasági árufelesleg megjelenése a korábban önellátó uradalmakat <strong>árutermelő gazdálkodásra</strong> ösztönözte[cite: 1]. Ez újra lehetővé tette a nem termelő városi lakosság ellátását, megélénkítette a belső – elsősorban folyóvízi – kereskedelmet, és megerősítette a pénzgazdálkodást, ami közvetlenül megteremtette a városok újbóli létrejöttének alapjait[cite: 1].</p>
+
+        <h2 class="section-title">2. A középkori városok jogi helyzete és kiváltságai</h2>
+        <p>A nyugat-európai városok lakói kezdetben szolgaállapotú kereskedők és kézművesek voltak[cite: 1]. Az érett középkorban (11–13. század) a felhalmozott vagyonukra és számbeli erejükre támaszkodva sikerült földesuraikkal szemben <span class="important-term">városi kiváltságokat</span> kiharcolniuk, mentesülve a földesúri joghatóság alól[cite: 1]. Az uralkodók jellemzően támogatták a városok önállósodási törekvéseit, mivel felismerték bennük a lázadó nagyhűbéresekkel szembeni politikai szövetségest, valamint a hosszú távú adóbevételek biztosítékát[cite: 1].</p>
+
+        <div class="diagram-container">
+            <div class="diagram-title">A legfontosabb városi kiváltságjogok</div>
+            <table class="diagram-table">
+                <tr>
+                    <td><strong>Vásártartási jog</strong><br>Központi piaci szerep és kereskedelmi monopólium a régióban[cite: 1].</td>
+                    <td><strong>Egy összegű adózás</strong><br>Évente egyszer, fix összegben közvetlenül a királynak (nincsenek földesúri túlkapások)[cite: 1].</td>
+                    <td><strong>Városfal építése</strong><br>A katonai és védelmi önállóság szimbóluma a külső támadásokkal szemben[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td><strong>Városi önkormányzat</strong><br>Szabad bíró- (vagy polgármester-) és plébánosválasztás[cite: 1].</td>
+                    <td><strong>Saját bíráskodás</strong><br>A város saját bírósága dönt, teljesen kiiktatva a földesúri úriszéket[cite: 1].</td>
+                    <td><strong>Árumegállító jog</strong><br>A városon áthaladó kereskedők kötelesek voltak árujukat helyben eladásra felkínálni[cite: 1].</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>A városi polgárjog két alapvető, egyedülálló szabadságjogot is biztosított:</p>
+        <ul>
+            <li><strong>Szabad tulajdonjog:</strong> A polgár minden vagyonával szabadon rendelkezett, eladhatta és örökíthette azt[cite: 1]. Ez sem a nemesekre, sem a jobbágyokra nem volt igaz a hűbéri kötöttségek miatt[cite: 1].</li>
+            <li><strong>A személyes szabadság joga:</strong> A középkori szállóige szerint <em>„A városi levegő szabaddá tesz”</em>[cite: 1]. Aki egy évet és egy napot eltöltött a városban, felszabadult a földesúri függés alól[cite: 1].</li>
+        </ul>
+
+        <h2 class="section-title">3. Társadalom, életmód és higiénia a városban</h2>
+        <p>A középkori város – a feudális világhoz hasonlóan – szigorú belső hierarchiára épült[cite: 1]. A lakosság jogilag és egzisztenciálisan két fő csoportra oszlott[cite: 1]:</p>
+        <ul>
+            <li><strong>Patríciusok és céhmesterek:</strong> A jómódú távolsági kereskedők és vagyonos iparosmesterek szűk csoportja, akik a kezükben tartották a politikai irányítást és a városi tanácsot[cite: 1].</li>
+            <li><strong>Plebejusok:</strong> A városi nép szegényebb, polgárjoggal nem rendelkező, de személyükben szabad tömege (napszámosok, szolgák, beköltöző jobbágyok)[cite: 1].</li>
+        </ul>
+        <p>A városok beépítettsége a védelmet nyújtó városfalak miatt rendkívül sűrű volt[cite: 1]. A központban a piactér, a városháza és a templom állt, míg a lakosság növekedésével szűk utcák (sikátorok) és egymásra épített emeletes házak jöttek létre, ami miatt állandóak voltak a pusztító tűzvészek[cite: 1]. A csatornázás hiánya miatt a higiénia súlyos problémát jelentett; a falak közé zsúfolt tömeget rendszeresen járványok tizedelték[cite: 1]. A legsúlyosabb katasztrófát az <strong>1347-es nagy pestisjárvány</strong> jelentette, amelyet genovai hajósok hurcoltak be a Fekete-tenger felől, és amely egyes vidékeken 50%-os pusztítást végzett[cite: 1]. Ugyanakkor a higiéniai helyzet városonként eltért: sok helyen (például a középkori Budán) külön szemétszedők gondoskodtak a köztisztaságról[cite: 1].</p>
+        <p>A nyugat-európai városok hálózata sűrű és egyenletes volt, átlagosan 4-5000 fős lakossággal, míg a nagy kereskedelmi központok elérték a 10-15 000 főt is[cite: 1].</p>
+
+        <h2 class="section-title">4. A céhes ipar működése</h2>
+        <p>A városi kézművesek szakmánként (kovácsok, szabók, takácsok stb.) szigorú érdekvédelmi szervezeteket, úgynevezett <span class="important-term">céheket</span> hoztak létre[cite: 1]. A céh teljes jogú tagjai kizárólag a saját műhellyel rendelkező <strong>mesterek</strong> voltak[cite: 1].</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>A céhrendszer alapelvei</th>
+                    <th>Gazdasági és társadalmi következmények</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>A verseny teljes korlátozása:</strong> Szabályozták a munkaidőt, a munkaeszközök és az alkalmazható munkaerő számát[cite: 1].</td>
+                    <td>Biztosította, hogy a szűk és korlátozott felvevőpiacon minden mester megélhessen, megakadályozva a tönkremenetelt[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td><strong>Ár- és mennyiségi korlátozás:</strong> Szigorúan megszabták a termékek árát és a kibocsátott mennyiséget[cite: 1].</td>
+                    <td>A piacon állandó hiány és viszonylag magas árak alakultak ki, nem érvényesült a szabadverseny[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td><strong>Szigorú minőségellenőrzés:</strong> Előírták a felhasznált alapanyagok és a késztermékek minőségét[cite: 1].</td>
+                    <td>Garantálta a vásárlók számára a máig méltán csodált, kiváló minőségű kézműves termékeket[cite: 1].</td>
+                </tr>
+                <tr>
+                    <td><strong>Munkamegosztás hiánya:</strong> Egy terméket az elejétől a végéig egyetlen ember készített el[cite: 1].</td>
+                    <td>Kizárta a tömegtermelést és a technológiai hatékonyság gyors növekedését; keményen üldözték a céhen kívüli iparosokat, a <em>kontárokat</em>[cite: 1].</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>A mesterré válás egy szigorú, hierarchikus folyamat volt: az inasévek után a jelölt <em>céhlegényként</em> szolgált, majd kötelező külföldi tanulmányútra indult[cite: 1]. Ennek végén el kellett készítenie a <strong>remekművet</strong>, és saját költségén egy rendkívül drága lakomát kellett biztosítania a céhtagoknak, ami komoly anyagi szűrőt jelentett[cite: 1]. A céhek közösségi feladatokat is elláttak, mint például a városfalak őrzése vagy a rendfenntartás[cite: 1].</p>
+
+        <h2 class="section-title">5. A középkori távolsági kereskedelem rendszere</h2>
+        <p>A vasút megjelenéséig a nagy tömegű áruk szállítása szárazföldön – a rossz utak, az útonállók és a vonóállatok magas takarmányköltségei miatt – gazdaságtalan volt[cite: 1]. A szárazföldi utak így a helyi cserére és a luxuscikkekre (pl. Selyemút) korlátozótdtak[cite: 1]. A nagybani kereskedelem a vízi utakon, elsősorban két nagy tengeri útvonalon zajlott[cite: 1]:</p>
+
+        <h3>A) A Levantei kereskedelmi útvonal</h3>
+        <p>A Földközi-tengeren zajló, közvetítő jellegű kereskedelem[cite: 1]. Az észak-itáliai városállamok – elsősorban <strong>Velence és Genova</strong> – irányították[cite: 1]. Európából nemesfémet szállítottak az arab térségbe, ahonnan cserébe távol-keleti luxuscikkeket (selyem, porcelán, fűszerek: bors, fahéj, gyömbér) hoztak be[cite: 1]. Mivel a keleti kultúrák fejlettebbek voltak, az árukért nemesfémmel kellett fizetni, ami hosszú távon komoly nemesfémhiányt (<span class="important-term">aranyéhség</span>) idézett elő Európában – ez vált a későbbi földrajzi felfedezések egyik fő hajtóerejévé[cite: 1].</p>
+
+        <h3>B) A Hanza kereskedelmi útvonal</h3>
+        <p>Az Északi- és Balti-tengeren zajló tömegáru-kereskedelem[cite: 1]. Az északnémet (Bréma, Hamburg, Köln) és flandriai városok szövetsége (<span class="important-term">Hanza-szövetség</span>) uralta[cite: 1]. Nyugat-Európából késztermékeket (posztó, fegyverek, szerszámok) és levantei luxuscikkeket vittek Észak- és Kelet-Európába, ahonnan cserébe létfontosságú élelmiszereket és nyersanyagokat (gabonát, halat, fát, mézet, prémet) szállítottak vissza[cite: 1]. Flandria a kereskedelem révén Észak-Itália mellett Európa legsűrűbben lakott gazdasági centrumává vált[cite: 1].</p>
+
+        <p>A két tengeri zónát kezdetben a szárazföldi <strong>Champagne</strong> vásárai kötötték össze, majd a 15. századra a hajózás fejlődésével az Atlanti-óceánon át közvetlen tengeri összeköttetés jött létre közöttük[cite: 1].</p>
+
+        <h2 class="section-title">6. A 15. század technikai újításai és az észak-itáliai bankvilág</h2>
+        <p>A 14. századi válságok (éhínségek, háborúk, pestis) után a 15. század a gazdasági és technológiai fellendülés kora lett, amelynek motorjai a városok voltak[cite: 1]:</p>
+        <ul>
+            <li><strong>Karavella és tengeri műszerek:</strong> Kifejlesztették a hátsókormányos, összetett vitorlázatú, széllel szemben is haladni képes hajótípust (karavella), és az araboktól átvették az <strong>iránytűt</strong>[cite: 1]. Ezek lehetővé tették a nyílt óceáni hajózást, megágyazva a földrajzi felfedezéseknek[cite: 1].</li>
+            <li><strong>Lőfegyverek:</strong> Arab közvetítéssel elterjedt a puskapor, ami alapjaiban változtatta meg a hadviselést[cite: 1].</li>
+            <li><strong>Könyvnyomtatás (1450 körül):</strong> <strong>Johannes Gutenberg</strong> mainzi ötvösmester feltalálta a mozgatható, cserélhető fémbetűkkel történő nyomtatást[cite: 1]. A könyvgyártás olcsóvá válása elhozta az emberiség harmadik információs forradalmát, felgyorsítva a kulturális fejlődést[cite: 1].</li>
+        </ul>
+
+        <h3 class="subsection-title">Az észak-itáliai városállamok és a modern bankok</h3>
+        <p>Gazdasági erejük révén az észak-itáliai városok függetlenedtek a Német-római Birodalomtól, és önálló városállamokat hoztak létre[cite: 1]. Velence a 14–15. században a Földközi-tenger keleti medencéjének urává vált[cite: 1]. <strong>Firenze</strong> a textilipara mellett nemzetközi banki tevékenységével emelkedett ki (a város nevéből és aranypénzéből, a fiorinóból származik a magyar <em>forint</em> szó)[cite: 1]. A korabeli bankárok több városban fenntartott telephelyeik révén bevezették a <strong>letét, az átutalás és a hitel</strong> intézményét, így a kereskedőknek már nem kellett készpénzt szállítaniuk a veszélyes utakon, hanem bankjegyek (váltók) felmutatásával bonyolíthatták le üzleteiket[cite: 1].</p>
+    </main>
+
+    <footer>
+        <p>Készült az érettségi követelmények és a hivatalos tematikák alapján.</p>
+    </footer>
+</div>
+
+</body>
+</html>
